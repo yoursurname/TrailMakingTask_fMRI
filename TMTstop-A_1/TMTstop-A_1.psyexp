@@ -1,0 +1,626 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2021.2.3">
+  <Settings>
+    <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
+    <Param name="Audio lib" updates="None" val="pyo" valType="str"/>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data file delimiter" updates="None" val="auto" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant': '', 'session': '001'}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="True" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="False" valType="bool"/>
+    <Param name="HTML path" updates="None" val="" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Resources" updates="None" val="[]" valType="list"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Save hdf5 file" updates="None" val="False" valType="bool"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="height" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="[1920, 1080]" valType="list"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="$[0,0,0]" valType="color"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="elAddress" updates="None" val="100.1.1.1" valType="str"/>
+    <Param name="elDataFiltering" updates="None" val="FILTER_LEVEL_2" valType="str"/>
+    <Param name="elLiveFiltering" updates="None" val="FILTER_LEVEL_OFF" valType="str"/>
+    <Param name="elModel" updates="None" val="EYELINK 1000 DESKTOP" valType="str"/>
+    <Param name="elPupilAlgorithm" updates="None" val="ELLIPSE_FIT" valType="str"/>
+    <Param name="elPupilMeasure" updates="None" val="PUPIL_AREA" valType="str"/>
+    <Param name="elSampleRate" updates="None" val="1000" valType="num"/>
+    <Param name="elSimMode" updates="None" val="False" valType="bool"/>
+    <Param name="elTrackEyes" updates="None" val="RIGHT_EYE" valType="str"/>
+    <Param name="elTrackingMode" updates="None" val="PUPIL_CR_TRACKING" valType="str"/>
+    <Param name="expName" updates="None" val="TMTAB" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="eyetracker" updates="None" val="None" valType="str"/>
+    <Param name="gpAddress" updates="None" val="127.0.0.1" valType="str"/>
+    <Param name="gpPort" updates="None" val="4242" valType="num"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+    <Param name="mgBlink" updates="None" val="('MIDDLE_BUTTON',)" valType="list"/>
+    <Param name="mgMove" updates="None" val="CONTINUOUS" valType="str"/>
+    <Param name="mgSaccade" updates="None" val="0.5" valType="num"/>
+    <Param name="tbLicenseFile" updates="None" val="" valType="str"/>
+    <Param name="tbModel" updates="None" val="" valType="str"/>
+    <Param name="tbSampleRate" updates="None" val="60" valType="num"/>
+    <Param name="tbSerialNo" updates="None" val="" valType="str"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial">
+      <ImageComponent name="Stim">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$Correct_StimFile" valType="file"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="" valType="str"/>
+        <Param name="name" updates="None" val="Stim" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(1.777, 1)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="num"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param name="allowedKeys" updates="constant" val="'1','2','3'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="$corrAns" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="store" updates="constant" val="all keys" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <CodeComponent name="code">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="msg=''&amp;#10;total_corr=0&amp;#10;total_all=0&amp;#10;msg2=''&amp;#10;rt=0" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="msg = &quot;&quot;;&amp;#10;total_corr = 0;&amp;#10;total_all = 0;&amp;#10;msg2 = &quot;&quot;;&amp;#10;rt = 0;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if (key_resp_2.corr) {&amp;#10;    msg = &quot;ring.wav&quot;;&amp;#10;    total_corr = (total_corr + 1);&amp;#10;    total_all = (total_all + 1);&amp;#10;    rt = key_resp.rt;&amp;#10;    Stim.setImage(Correct_StimFile);&amp;#10;} else {&amp;#10;    msg = &quot;buzzerwrong.wav&quot;;&amp;#10;    total_all = (total_all + 1);&amp;#10;    rt = key_resp.rt;&amp;#10;    Stim.setImage(False_StimFile);&amp;#10;}&amp;#10;if ((trials.thisN === 0)) {&amp;#10;    startTime = globalClock.getTime();&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if key_resp_2.corr:&amp;#10;  msg='ring.wav' &amp;#10;  total_corr=total_corr+1&amp;#10;  total_all=total_all+1&amp;#10;  rt=key_resp.rt&amp;#10;  Stim.setImage(Correct_StimFile)&amp;#10;  &amp;#10;&amp;#10;else:&amp;#10;  msg='buzzerwrong.wav'&amp;#10;  total_all=total_all+1&amp;#10;  rt=key_resp.rt&amp;#10;&amp;#10;&amp;#10;if trials.thisN == 0: # only on the first trial&amp;#10;    startTime = globalClock.getTime()&amp;#10;    &amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Both" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="if globalClock.getTime() - startTime &gt;= 180:&amp;#10;    trials.finished = True&amp;#10;    continueRoutine = False&amp;#10;    &amp;#10;#Display last trial image to show result for 1 sec then ends&amp;#10;if currentLoop.thisN == 25 and (t &gt;= 1): &amp;#10;    continueRoutine = False&amp;#10;&amp;#10;#End trial only on correct responses&amp;#10;if len(key_resp_2.keys) &gt; 0 and [key_resp_2.keys[-1]] == corrAns:&amp;#10;    key_resp_2.corr = 1&amp;#10;    continueRoutine = False&amp;#10;    &amp;#10;#elif len(key_resp_2.keys) == 5:   # give up after 5 attempts.&amp;#10;    #continueRoutine = False # don't need to override resp.corr in this case&amp;#10;&amp;#10;elif len(key_resp_2.keys) &gt; 0 and [key_resp_2.keys] != corrAns:&amp;#10;    key_resp_2.corr = 0&amp;#10;    #continueRoutine = True&amp;#10;    Stim.setImage(False_StimFile)&amp;#10;    " valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="Instructions">
+      <ImageComponent name="Instruct">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="C:\Users\emilo\OneDrive - Lund University\Experiment paradigms\TMT_PsychoPY_new\Instructions TMTstopA.png" valType="file"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="" valType="str"/>
+        <Param name="name" updates="None" val="Instruct" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(1.28, 0.72)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="num"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="key_resp">
+        <Param name="allowedKeys" updates="constant" val="" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="End">
+      <TextComponent name="text">
+        <Param name="color" updates="constant" val="white" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="num"/>
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="6" valType="num"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Time is up! &amp;#10;&amp;#10;Well done, you have finished the experiment.&amp;#10;&amp;#10;&amp;#10;&amp;#10;Tiden är ute!&amp;#10;&amp;#10;Bra jobbat, du har slutfört experimentet." valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="InstructB1">
+      <ImageComponent name="image">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="C:\Users\emilo\OneDrive - Lund University\Experiment paradigms\TMT_PsychoPY\InkedInstructBfinal_LI.jpg" valType="file"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="" valType="str"/>
+        <Param name="name" updates="None" val="image" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(0.5, 0.5)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="num"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="key_resp_4">
+        <Param name="allowedKeys" updates="constant" val="" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_4" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="text_4">
+        <Param name="color" updates="constant" val="white" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.0.4" valType="num"/>
+        <Param name="name" updates="None" val="text_4" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, -0,45)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Position your fingers over 1, 2 and 3 then press any button to start the experiment." valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="2" valType="num"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="FinishRound1">
+      <TextComponent name="text_3">
+        <Param name="color" updates="constant" val="white" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="num"/>
+        <Param name="name" updates="None" val="text_3" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Good job!&amp;#10;&amp;#10;Round 1 of 4 finished.&amp;#10;&amp;#10;Press any button to continue.&amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_3">
+        <Param name="allowedKeys" updates="constant" val="" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="num"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_3" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="num"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="num"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="num"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="FixCross">
+      <PolygonComponent name="polygon">
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="white" valType="color"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="white" valType="color"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="num"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="polygon" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="None" val="cross" valType="str"/>
+        <Param name="size" updates="constant" val="(0.5, 0.5)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="vertices" updates="constant" val="" valType="list"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="errorTrial"/>
+    <Routine name="PracticeTrial">
+      <ImageComponent name="Stim_practice">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$Correct_StimFile" valType="file"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="" valType="str"/>
+        <Param name="name" updates="None" val="Stim_practice" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(1.777, 1)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="num"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="key_resp_practice">
+        <Param name="allowedKeys" updates="constant" val="'1','2','3','x','z'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_practice" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <CodeComponent name="code_2">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if (key_resp_practice.corr) {&amp;#10;    Stim_practice.setImage(Correct_StimFile);&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if key_resp_practice.corr:&amp;#10;  Stim_practice.setImage(Correct_StimFile)&amp;#10;  &amp;#10;&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Both" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="#Display last trial image to show result for 1 sec then ends&amp;#10;if currentLoop.thisN == 12 and (t &gt;= 1): &amp;#10;    continueRoutine = False&amp;#10;&amp;#10;#End trial only on correct responses&amp;#10;if len(key_resp_practice.keys) &gt; 0 and [key_resp_practice.keys[-1]] == corrAns:&amp;#10;    key_resp_practice.corr = 1&amp;#10;    continueRoutine = False&amp;#10;&amp;#10;elif len(key_resp_practice.keys) &gt; 0 and [key_resp_practice.keys] != corrAns:&amp;#10;    key_resp_practice.corr = 0&amp;#10;    Stim_practice.setImage(False_StimFile)&amp;#10;    &amp;#10;if(key_resp_5.keys == 'z'):&amp;#10;    trials_practice = True" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="if (((currentLoop.thisN === 12) &amp;&amp; (t &gt;= 1))) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;if (((key_resp_practice.keys.length &gt; 0) &amp;&amp; ([key_resp_practice.keys.slice((- 1))[0]] === corrAns))) {&amp;#10;    key_resp_practice.corr = 1;&amp;#10;    continueRoutine = false;&amp;#10;} else {&amp;#10;    if (((key_resp_practice.keys.length &gt; 0) &amp;&amp; ([key_resp_practice.keys] !== corrAns))) {&amp;#10;        key_resp_practice.corr = 0;&amp;#10;        Stim_practice.setImage(False_StimFile);&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_2" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="ReadySetGo">
+      <TextComponent name="text_5">
+        <Param name="color" updates="constant" val="white" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.03" valType="num"/>
+        <Param name="name" updates="None" val="text_5" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="You have finished the practice. If you understood the task correctly please read on, otherwise ask the experiment leader or press X to restart the practice.&amp;#10;&amp;#10;From here on there will be 25 circles instead of 12. If you finish all circles you will see a white cross for a few seconds then you will get 25 new circles and start again from 1. The experiments will end automatically after three minutes. &amp;#10;&amp;#10;Press 1, 2 or 3  to start the experiment.&amp;#10;&amp;#10;&amp;#10;&amp;#10;Du har slutfört provomgången. Om du förstod uppgiften rätt, läs vidare, annars fråga experimentledaren eller tryck på X för att starta om provomgången.&amp;#10;&amp;#10;Härifrån kommer det att finnas 25 circlar istället för 12. Om du slutför alla circlar kommer du att se ett vitt kors i några sekunder, sedan får du 25 nya circlar och börjar om från 1. Experimenten avslutas automatiskt efter tre minuter.&amp;#10;&amp;#10;Tryck på 1, 2 eller 3 för att starta experimentet.&amp;#10;&amp;#10;&amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_5">
+        <Param name="allowedKeys" updates="constant" val="'1','2','3','x','space'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_5" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <CodeComponent name="code_3">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="&amp;#10;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Both" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="if(key_resp_5.keys == 'x'):&amp;#10;    continueRoutine = False&amp;#10;&amp;#10;if '1' in key_resp_5.keys or '2' in key_resp_5.keys or '3' in key_resp_5.keys:&amp;#10;    continueRoutine = False&amp;#10;    restartpractice.finished = True&amp;#10;    &amp;#10;    #trials_practice.finished = True&amp;#10;&amp;#10;&amp;#10;#if event.getKeys(keyList=['x']): &amp;#10;    #break&amp;#10;&amp;#10;#elif event.getKeys(keyList=['space']): &amp;#10;    #restartpractice.finished = True&amp;#10;&amp;#10;#elif event.getKeys(keyList=['1'] or ['2'] or ['3']):&amp;#10;    #continueRoutine = False&amp;#10;    &amp;#10;    " valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_3" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="Instruktioner">
+      <ImageComponent name="image_2">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="C:\Users\emilo\OneDrive - Lund University\Experiment paradigms\TMT_PsychoPY_new\Instruktioner TMTstopA.png" valType="file"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="" valType="str"/>
+        <Param name="name" updates="None" val="image_2" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(1.28, 0.72)" valType="list"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="num"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <KeyboardComponent name="key_resp_6">
+        <Param name="allowedKeys" updates="constant" val="" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_6" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="Instructions"/>
+    <Routine name="Instruktioner"/>
+    <Routine name="FixCross"/>
+    <LoopInitiator loopType="TrialHandler" name="restartpractice">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="100" valType="num"/>
+      <Param name="name" updates="None" val="restartpractice" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <LoopInitiator loopType="TrialHandler" name="trials_practice">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'NumberLetter': 1, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_practice.png', 'Correct_StimFile': 'TMTstop-A_1_practice.png', 'False_StimFile': 'TMTstop-A_1_practice.png', 'DurationTrial': 10}, {'NumberLetter': 2, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_practice.png', 'Correct_StimFile': 'TMTstop-A_1_practicefirstgreen.png', 'False_StimFile': 'TMTstop-A_1_practicefirstred.png', 'DurationTrial': 10}, {'NumberLetter': 3, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_practicelinestimulus0.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus0.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus0.png', 'DurationTrial': 10}, {'NumberLetter': 4, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_practicelinestimulus1.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus1.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus1.png', 'DurationTrial': 10}, {'NumberLetter': 5, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_practicelinestimulus2.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus2.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus2.png', 'DurationTrial': 10}, {'NumberLetter': 6, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_practicelinestimulus3.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus3.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus3.png', 'DurationTrial': 10}, {'NumberLetter': 7, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_practicelinestimulus4.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus4.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus4.png', 'DurationTrial': 10}, {'NumberLetter': 8, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_practicelinestimulus5.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus5.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus5.png', 'DurationTrial': 10}, {'NumberLetter': 9, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_practicelinestimulus6.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus6.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus6.png', 'DurationTrial': 10}, {'NumberLetter': 10, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_practicelinestimulus7.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus7.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus7.png', 'DurationTrial': 10}, {'NumberLetter': 11, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_practicelinestimulus8.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus8.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus8.png', 'DurationTrial': 10}, {'NumberLetter': 12, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_practicelinestimulus9.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus9.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus9.png', 'DurationTrial': 10}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="TMTstop-A_1_practice.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trials_practice" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="PracticeTrial"/>
+    <LoopTerminator name="trials_practice"/>
+    <Routine name="ReadySetGo"/>
+    <LoopTerminator name="restartpractice"/>
+    <Routine name="FixCross"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'NumberLetter': 1, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_1.png', 'Correct_StimFile': 'TMTstop-A_1_1.png', 'False_StimFile': 'TMTstop-A_1_1.png', 'DurationTrial': 10}, {'NumberLetter': 2, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_1.png', 'Correct_StimFile': 'TMTstop-A_1_1firstgreen.png', 'False_StimFile': 'TMTstop-A_1_1firstred.png', 'DurationTrial': 10}, {'NumberLetter': 3, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_1linestimulus0.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus0.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus0.png', 'DurationTrial': 10}, {'NumberLetter': 4, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_1linestimulus1.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus1.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus1.png', 'DurationTrial': 10}, {'NumberLetter': 5, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_1linestimulus2.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus2.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus2.png', 'DurationTrial': 10}, {'NumberLetter': 6, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_1linestimulus3.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus3.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus3.png', 'DurationTrial': 10}, {'NumberLetter': 7, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_1linestimulus4.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus4.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus4.png', 'DurationTrial': 10}, {'NumberLetter': 8, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_1linestimulus5.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus5.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus5.png', 'DurationTrial': 10}, {'NumberLetter': 9, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_1linestimulus6.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus6.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus6.png', 'DurationTrial': 10}, {'NumberLetter': 10, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_1linestimulus7.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus7.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus7.png', 'DurationTrial': 10}, {'NumberLetter': 11, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_1linestimulus8.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus8.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus8.png', 'DurationTrial': 10}, {'NumberLetter': 12, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_1linestimulus9.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus9.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus9.png', 'DurationTrial': 10}, {'NumberLetter': 13, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_1linestimulus10.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus10.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus10.png', 'DurationTrial': 1}, {'NumberLetter': 14, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_1linestimulus11.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus11.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus11.png', 'DurationTrial': None}, {'NumberLetter': 15, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_1linestimulus12.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus12.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus12.png', 'DurationTrial': None}, {'NumberLetter': 16, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_1linestimulus13.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus13.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus13.png', 'DurationTrial': None}, {'NumberLetter': 17, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_1linestimulus14.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus14.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus14.png', 'DurationTrial': None}, {'NumberLetter': 18, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_1linestimulus15.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus15.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus15.png', 'DurationTrial': None}, {'NumberLetter': 19, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_1linestimulus16.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus16.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus16.png', 'DurationTrial': None}, {'NumberLetter': 20, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_1linestimulus17.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus17.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus17.png', 'DurationTrial': None}, {'NumberLetter': 21, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_1linestimulus18.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus18.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus18.png', 'DurationTrial': None}, {'NumberLetter': 22, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_1linestimulus19.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus19.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus19.png', 'DurationTrial': None}, {'NumberLetter': 23, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_1linestimulus20.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus20.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus20.png', 'DurationTrial': None}, {'NumberLetter': 24, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_1linestimulus21.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus21.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus21.png', 'DurationTrial': None}, {'NumberLetter': 25, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_1linestimulus22.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus22.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus22.png', 'DurationTrial': None}, {'NumberLetter': None, 'corrAns': None, 'StimFile': 'TMTstop-A_1_1linestimulus23.png', 'Correct_StimFile': 'TMTstop-A_1_1greenlinestimulus23.png', 'False_StimFile': 'TMTstop-A_1_1redlinestimulus23.png', 'DurationTrial': None}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="TMTstop-A_1_1.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="FixCross"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_2">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'NumberLetter': 1, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_2.png', 'Correct_StimFile': 'TMTstop-A_1_2.png', 'False_StimFile': 'TMTstop-A_1_2.png', 'DurationTrial': 10}, {'NumberLetter': 2, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_2.png', 'Correct_StimFile': 'TMTstop-A_1_2firstgreen.png', 'False_StimFile': 'TMTstop-A_1_2firstred.png', 'DurationTrial': 10}, {'NumberLetter': 3, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_2linestimulus0.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus0.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus0.png', 'DurationTrial': 10}, {'NumberLetter': 4, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_2linestimulus1.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus1.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus1.png', 'DurationTrial': 10}, {'NumberLetter': 5, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_2linestimulus2.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus2.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus2.png', 'DurationTrial': 10}, {'NumberLetter': 6, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_2linestimulus3.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus3.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus3.png', 'DurationTrial': 10}, {'NumberLetter': 7, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_2linestimulus4.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus4.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus4.png', 'DurationTrial': 10}, {'NumberLetter': 8, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_2linestimulus5.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus5.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus5.png', 'DurationTrial': 10}, {'NumberLetter': 9, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_2linestimulus6.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus6.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus6.png', 'DurationTrial': 10}, {'NumberLetter': 10, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_2linestimulus7.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus7.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus7.png', 'DurationTrial': 10}, {'NumberLetter': 11, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_2linestimulus8.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus8.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus8.png', 'DurationTrial': 10}, {'NumberLetter': 12, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_2linestimulus9.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus9.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus9.png', 'DurationTrial': 10}, {'NumberLetter': 13, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_2linestimulus10.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus10.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus10.png', 'DurationTrial': 1}, {'NumberLetter': 14, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_2linestimulus11.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus11.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus11.png', 'DurationTrial': None}, {'NumberLetter': 15, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_2linestimulus12.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus12.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus12.png', 'DurationTrial': None}, {'NumberLetter': 16, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_2linestimulus13.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus13.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus13.png', 'DurationTrial': None}, {'NumberLetter': 17, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_2linestimulus14.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus14.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus14.png', 'DurationTrial': None}, {'NumberLetter': 18, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_2linestimulus15.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus15.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus15.png', 'DurationTrial': None}, {'NumberLetter': 19, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_2linestimulus16.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus16.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus16.png', 'DurationTrial': None}, {'NumberLetter': 20, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_2linestimulus17.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus17.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus17.png', 'DurationTrial': None}, {'NumberLetter': 21, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_2linestimulus18.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus18.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus18.png', 'DurationTrial': None}, {'NumberLetter': 22, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_2linestimulus19.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus19.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus19.png', 'DurationTrial': None}, {'NumberLetter': 23, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_2linestimulus20.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus20.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus20.png', 'DurationTrial': None}, {'NumberLetter': 24, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_2linestimulus21.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus21.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus21.png', 'DurationTrial': None}, {'NumberLetter': 25, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_2linestimulus22.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus22.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus22.png', 'DurationTrial': None}, {'NumberLetter': None, 'corrAns': None, 'StimFile': 'TMTstop-A_1_2linestimulus23.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus23.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus23.png', 'DurationTrial': None}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="TMTstop-A_1_2.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trials_2" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="trials_2"/>
+    <Routine name="FixCross"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_3">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'NumberLetter': 1, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_3.png', 'Correct_StimFile': 'TMTstop-A_1_3.png', 'False_StimFile': 'TMTstop-A_1_3.png', 'DurationTrial': 10}, {'NumberLetter': 2, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_3.png', 'Correct_StimFile': 'TMTstop-A_1_3firstgreen.png', 'False_StimFile': 'TMTstop-A_1_3firstred.png', 'DurationTrial': 10}, {'NumberLetter': 3, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_3linestimulus0.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus0.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus0.png', 'DurationTrial': 10}, {'NumberLetter': 4, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_3linestimulus1.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus1.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus1.png', 'DurationTrial': 10}, {'NumberLetter': 5, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_3linestimulus2.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus2.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus2.png', 'DurationTrial': 10}, {'NumberLetter': 6, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_3linestimulus3.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus3.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus3.png', 'DurationTrial': 10}, {'NumberLetter': 7, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_3linestimulus4.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus4.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus4.png', 'DurationTrial': 10}, {'NumberLetter': 8, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_3linestimulus5.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus5.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus5.png', 'DurationTrial': 10}, {'NumberLetter': 9, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_3linestimulus6.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus6.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus6.png', 'DurationTrial': 10}, {'NumberLetter': 10, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_3linestimulus7.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus7.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus7.png', 'DurationTrial': 10}, {'NumberLetter': 11, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_3linestimulus8.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus8.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus8.png', 'DurationTrial': 10}, {'NumberLetter': 12, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_3linestimulus9.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus9.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus9.png', 'DurationTrial': 10}, {'NumberLetter': 13, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_3linestimulus10.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus10.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus10.png', 'DurationTrial': 1}, {'NumberLetter': 14, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_3linestimulus11.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus11.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus11.png', 'DurationTrial': None}, {'NumberLetter': 15, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_3linestimulus12.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus12.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus12.png', 'DurationTrial': None}, {'NumberLetter': 16, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_3linestimulus13.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus13.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus13.png', 'DurationTrial': None}, {'NumberLetter': 17, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_3linestimulus14.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus14.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus14.png', 'DurationTrial': None}, {'NumberLetter': 18, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_3linestimulus15.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus15.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus15.png', 'DurationTrial': None}, {'NumberLetter': 19, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_3linestimulus16.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus16.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus16.png', 'DurationTrial': None}, {'NumberLetter': 20, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_3linestimulus17.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus17.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus17.png', 'DurationTrial': None}, {'NumberLetter': 21, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_3linestimulus18.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus18.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus18.png', 'DurationTrial': None}, {'NumberLetter': 22, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_3linestimulus19.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus19.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus19.png', 'DurationTrial': None}, {'NumberLetter': 23, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_3linestimulus20.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus20.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus20.png', 'DurationTrial': None}, {'NumberLetter': 24, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_3linestimulus21.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus21.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus21.png', 'DurationTrial': None}, {'NumberLetter': 25, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_3linestimulus22.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus22.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus22.png', 'DurationTrial': None}, {'NumberLetter': None, 'corrAns': None, 'StimFile': 'TMTstop-A_1_3linestimulus23.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus23.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus23.png', 'DurationTrial': None}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="TMTstop-A_1_3.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trials_3" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="trials_3"/>
+    <Routine name="FixCross"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_4">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'NumberLetter': 1, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_3.png', 'Correct_StimFile': 'TMTstop-A_1_3.png', 'False_StimFile': 'TMTstop-A_1_3.png', 'DurationTrial': 10}, {'NumberLetter': 2, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_3.png', 'Correct_StimFile': 'TMTstop-A_1_3firstgreen.png', 'False_StimFile': 'TMTstop-A_1_3firstred.png', 'DurationTrial': 10}, {'NumberLetter': 3, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_3linestimulus0.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus0.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus0.png', 'DurationTrial': 10}, {'NumberLetter': 4, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_3linestimulus1.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus1.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus1.png', 'DurationTrial': 10}, {'NumberLetter': 5, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_3linestimulus2.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus2.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus2.png', 'DurationTrial': 10}, {'NumberLetter': 6, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_3linestimulus3.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus3.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus3.png', 'DurationTrial': 10}, {'NumberLetter': 7, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_3linestimulus4.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus4.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus4.png', 'DurationTrial': 10}, {'NumberLetter': 8, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_3linestimulus5.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus5.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus5.png', 'DurationTrial': 10}, {'NumberLetter': 9, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_3linestimulus6.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus6.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus6.png', 'DurationTrial': 10}, {'NumberLetter': 10, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_3linestimulus7.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus7.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus7.png', 'DurationTrial': 10}, {'NumberLetter': 11, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_3linestimulus8.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus8.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus8.png', 'DurationTrial': 10}, {'NumberLetter': 12, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_3linestimulus9.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus9.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus9.png', 'DurationTrial': 10}, {'NumberLetter': 13, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_3linestimulus10.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus10.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus10.png', 'DurationTrial': 1}, {'NumberLetter': 14, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_3linestimulus11.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus11.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus11.png', 'DurationTrial': None}, {'NumberLetter': 15, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_3linestimulus12.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus12.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus12.png', 'DurationTrial': None}, {'NumberLetter': 16, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_3linestimulus13.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus13.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus13.png', 'DurationTrial': None}, {'NumberLetter': 17, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_3linestimulus14.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus14.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus14.png', 'DurationTrial': None}, {'NumberLetter': 18, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_3linestimulus15.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus15.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus15.png', 'DurationTrial': None}, {'NumberLetter': 19, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_3linestimulus16.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus16.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus16.png', 'DurationTrial': None}, {'NumberLetter': 20, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_3linestimulus17.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus17.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus17.png', 'DurationTrial': None}, {'NumberLetter': 21, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_3linestimulus18.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus18.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus18.png', 'DurationTrial': None}, {'NumberLetter': 22, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_3linestimulus19.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus19.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus19.png', 'DurationTrial': None}, {'NumberLetter': 23, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_3linestimulus20.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus20.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus20.png', 'DurationTrial': None}, {'NumberLetter': 24, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_3linestimulus21.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus21.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus21.png', 'DurationTrial': None}, {'NumberLetter': 25, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_3linestimulus22.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus22.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus22.png', 'DurationTrial': None}, {'NumberLetter': None, 'corrAns': None, 'StimFile': 'TMTstop-A_1_3linestimulus23.png', 'Correct_StimFile': 'TMTstop-A_1_3greenlinestimulus23.png', 'False_StimFile': 'TMTstop-A_1_3redlinestimulus23.png', 'DurationTrial': None}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="TMTstop-A_1_4.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trials_4" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="trials_4"/>
+    <Routine name="FixCross"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_5">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'NumberLetter': 1, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_5.png', 'Correct_StimFile': 'TMTstop-A_1_5.png', 'False_StimFile': 'TMTstop-A_1_5.png', 'DurationTrial': 10}, {'NumberLetter': 2, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_5.png', 'Correct_StimFile': 'TMTstop-A_1_5firstgreen.png', 'False_StimFile': 'TMTstop-A_1_5firstred.png', 'DurationTrial': 10}, {'NumberLetter': 3, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_5linestimulus0.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus0.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus0.png', 'DurationTrial': 10}, {'NumberLetter': 4, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_5linestimulus1.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus1.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus1.png', 'DurationTrial': 10}, {'NumberLetter': 5, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_5linestimulus2.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus2.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus2.png', 'DurationTrial': 10}, {'NumberLetter': 6, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_5linestimulus3.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus3.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus3.png', 'DurationTrial': 10}, {'NumberLetter': 7, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_5linestimulus4.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus4.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus4.png', 'DurationTrial': 10}, {'NumberLetter': 8, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_5linestimulus5.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus5.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus5.png', 'DurationTrial': 10}, {'NumberLetter': 9, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_5linestimulus6.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus6.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus6.png', 'DurationTrial': 10}, {'NumberLetter': 10, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_5linestimulus7.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus7.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus7.png', 'DurationTrial': 10}, {'NumberLetter': 11, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_5linestimulus8.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus8.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus8.png', 'DurationTrial': 10}, {'NumberLetter': 12, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_5linestimulus9.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus9.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus9.png', 'DurationTrial': 10}, {'NumberLetter': 13, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_5linestimulus10.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus10.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus10.png', 'DurationTrial': 1}, {'NumberLetter': 14, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_5linestimulus11.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus11.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus11.png', 'DurationTrial': None}, {'NumberLetter': 15, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_5linestimulus12.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus12.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus12.png', 'DurationTrial': None}, {'NumberLetter': 16, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_5linestimulus13.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus13.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus13.png', 'DurationTrial': None}, {'NumberLetter': 17, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_5linestimulus14.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus14.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus14.png', 'DurationTrial': None}, {'NumberLetter': 18, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_5linestimulus15.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus15.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus15.png', 'DurationTrial': None}, {'NumberLetter': 19, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_5linestimulus16.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus16.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus16.png', 'DurationTrial': None}, {'NumberLetter': 20, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_5linestimulus17.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus17.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus17.png', 'DurationTrial': None}, {'NumberLetter': 21, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_5linestimulus18.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus18.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus18.png', 'DurationTrial': None}, {'NumberLetter': 22, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_5linestimulus19.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus19.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus19.png', 'DurationTrial': None}, {'NumberLetter': 23, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_5linestimulus20.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus20.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus20.png', 'DurationTrial': None}, {'NumberLetter': 24, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_5linestimulus21.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus21.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus21.png', 'DurationTrial': None}, {'NumberLetter': 25, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_5linestimulus22.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus22.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus22.png', 'DurationTrial': None}, {'NumberLetter': None, 'corrAns': None, 'StimFile': 'TMTstop-A_1_5linestimulus23.png', 'Correct_StimFile': 'TMTstop-A_1_5greenlinestimulus23.png', 'False_StimFile': 'TMTstop-A_1_5redlinestimulus23.png', 'DurationTrial': None}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="TMTstop-A_1_5.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trials_5" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="trials_5"/>
+    <Routine name="FixCross"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_6">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'NumberLetter': 1, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-A_1_2.png', 'Correct_StimFile': 'TMTstop-A_1_2.png', 'False_StimFile': 'TMTstop-A_1_2.png', 'DurationTrial': 10}, {'NumberLetter': 2, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-A_1_2.png', 'Correct_StimFile': 'TMTstop-A_1_2firstgreen.png', 'False_StimFile': 'TMTstop-A_1_2firstred.png', 'DurationTrial': 10}, {'NumberLetter': 3, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-A_1_2linestimulus0.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus0.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus0.png', 'DurationTrial': 10}, {'NumberLetter': 4, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-A_1_2linestimulus1.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus1.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus1.png', 'DurationTrial': 10}, {'NumberLetter': 5, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-A_1_2linestimulus2.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus2.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus2.png', 'DurationTrial': 10}, {'NumberLetter': 6, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-A_1_2linestimulus3.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus3.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus3.png', 'DurationTrial': 10}, {'NumberLetter': 7, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-A_1_2linestimulus4.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus4.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus4.png', 'DurationTrial': 10}, {'NumberLetter': 8, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-A_1_2linestimulus5.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus5.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus5.png', 'DurationTrial': 10}, {'NumberLetter': 9, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-A_1_2linestimulus6.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus6.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus6.png', 'DurationTrial': 10}, {'NumberLetter': 10, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-A_1_2linestimulus7.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus7.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus7.png', 'DurationTrial': 10}, {'NumberLetter': 11, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-A_1_2linestimulus8.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus8.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus8.png', 'DurationTrial': 10}, {'NumberLetter': 12, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-A_1_2linestimulus9.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus9.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus9.png', 'DurationTrial': 10}, {'NumberLetter': 13, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-A_1_2linestimulus10.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus10.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus10.png', 'DurationTrial': 1}, {'NumberLetter': 14, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-A_1_2linestimulus11.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus11.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus11.png', 'DurationTrial': None}, {'NumberLetter': 15, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-A_1_2linestimulus12.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus12.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus12.png', 'DurationTrial': None}, {'NumberLetter': 16, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-A_1_2linestimulus13.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus13.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus13.png', 'DurationTrial': None}, {'NumberLetter': 17, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-A_1_2linestimulus14.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus14.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus14.png', 'DurationTrial': None}, {'NumberLetter': 18, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-A_1_2linestimulus15.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus15.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus15.png', 'DurationTrial': None}, {'NumberLetter': 19, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-A_1_2linestimulus16.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus16.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus16.png', 'DurationTrial': None}, {'NumberLetter': 20, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-A_1_2linestimulus17.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus17.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus17.png', 'DurationTrial': None}, {'NumberLetter': 21, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-A_1_2linestimulus18.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus18.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus18.png', 'DurationTrial': None}, {'NumberLetter': 22, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-A_1_2linestimulus19.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus19.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus19.png', 'DurationTrial': None}, {'NumberLetter': 23, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-A_1_2linestimulus20.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus20.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus20.png', 'DurationTrial': None}, {'NumberLetter': 24, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-A_1_2linestimulus21.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus21.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus21.png', 'DurationTrial': None}, {'NumberLetter': 25, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-A_1_2linestimulus22.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus22.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus22.png', 'DurationTrial': None}, {'NumberLetter': None, 'corrAns': None, 'Correct': None, 'StimFile': 'TMTstop-A_1_2linestimulus23.png', 'Correct_StimFile': 'TMTstop-A_1_2greenlinestimulus23.png', 'False_StimFile': 'TMTstop-A_1_2redlinestimulus23.png', 'DurationTrial': None}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="TMTstop-A_1_6.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trials_6" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="trials_6"/>
+    <Routine name="End"/>
+  </Flow>
+</PsychoPy2experiment>
