@@ -1,0 +1,408 @@
+1.7157 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['pyo'] (in that order).
+6.0214 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001C7C49672B0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001C7C49C8588>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1055]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='glfw')
+6.0214 	EXP 	window1: mouseVisible = True
+6.0215 	EXP 	window1: recordFrameIntervals = False
+6.0909 	EXP 	window1: recordFrameIntervals = True
+6.1666 	WARNING 	t of last frame was 13.11ms (=1/76)
+6.1792 	WARNING 	t of last frame was 12.59ms (=1/79)
+6.1897 	WARNING 	t of last frame was 10.57ms (=1/94)
+6.2004 	WARNING 	t of last frame was 10.68ms (=1/93)
+6.2388 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+6.6878 	EXP 	window1: recordFrameIntervals = False
+7.0209 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Instruktioner TMTstopControl.png', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.28, 0.72]), texRes=128.0, units='height', win=Window(...))
+7.0237 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+7.0267 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.777, 1.   ]), texRes=128.0, units='height', win=Window(...))
+7.0287 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+7.0927 	EXP 	Created image_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Instruktioner TMTstopA.png', interpolate=True, mask=None, maskParams=None, name='image_3', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.28, 0.72]), texRes=128.0, units='height', win=Window(...))
+7.0956 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.777, 1.   ]), texRes=128.0, units='height', win=Window(...))
+7.0975 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+7.1612 	EXP 	Created image_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Instruktioner TMTstopB.png', interpolate=True, mask=None, maskParams=None, name='image_4', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.28, 0.72]), texRes=128.0, units='height', win=Window(...))
+7.1643 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.777, 1.   ]), texRes=128.0, units='height', win=Window(...))
+7.1662 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+7.2858 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+7.3397 	EXP 	image_2: autoDraw = True
+8.8872 	DATA 	Keypress: w
+8.8912 	EXP 	image_2: autoDraw = False
+8.8912 	EXP 	polygon: autoDraw = True
+9.0468 	DATA 	Keypress: w
+11.8895 	EXP 	Imported TMTstop-Control_1_conditions.xlsx as conditions, 8 conditions, 2 params
+11.8901 	EXP 	Created sequence: sequential, trialTypes=8, nReps=1, seed=None
+11.8904 	EXP 	New trial (rep=0, index=0): {'Block_file': 'TMTstop-Control_1_1.xlsx', 'Condition_rows': '0:26'}
+11.9485 	EXP 	Imported TMTstop-control_1_merged.xlsx as conditions, 26 conditions, 9 params
+11.9489 	EXP 	Created sequence: sequential, trialTypes=26, nReps=1, seed=None
+11.9491 	EXP 	New trial (rep=0, index=0): {'NumberLetter': 1, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-control_1_1.png', 'Correct_StimFile': 'TMTstop-control_1_1.png', 'False_StimFile': 'TMTstop-control_1_1.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 1}
+11.9494 	WARNING 	Requested image 'TMTstop-control_1_1.png' not found but similar filename 'TMTstop-control_1_1.jpg' exists. This will be used instead but changing the filename is advised.
+11.9865 	EXP 	polygon: autoDraw = False
+11.9865 	EXP 	Stim: image = 'TMTstop-control_1_1.png'
+11.9865 	EXP 	Stim: autoDraw = True
+12.8022 	EXP 	New trial (rep=0, index=1): {'NumberLetter': 2, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_1.png', 'Correct_StimFile': 'TMTstop-control_1_1firstgreen.png', 'False_StimFile': 'TMTstop-control_1_1firstred.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 2}
+12.8647 	DATA 	Keypress: 2
+12.8688 	EXP 	Stim: autoDraw = False
+12.8688 	EXP 	Stim: image = 'TMTstop-control_1_1firstgreen.png'
+12.8688 	EXP 	Stim: image = 'TMTstop-control_1_1firstgreen.png'
+12.8688 	EXP 	Stim: autoDraw = True
+12.8925 	DATA 	Keypress: 1
+12.8988 	EXP 	New trial (rep=0, index=2): {'NumberLetter': 3, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-control_1_1linestimulus0.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus0.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus0.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 3}
+12.9668 	EXP 	Stim: autoDraw = False
+12.9668 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus0.png'
+12.9668 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus0.png'
+12.9668 	EXP 	Stim: autoDraw = True
+13.0244 	DATA 	Keypress: 3
+13.0660 	DATA 	Keypress: 2
+13.0696 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus0.png'
+13.1080 	DATA 	Keypress: 1
+13.1134 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus0.png'
+13.1529 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus0.png'
+13.1911 	DATA 	Keypress: 1
+13.1954 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus0.png'
+13.2327 	DATA 	Keypress: 2
+13.2329 	DATA 	Keypress: 3
+13.2364 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus0.png'
+13.2400 	EXP 	New trial (rep=0, index=3): {'NumberLetter': 4, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_1linestimulus1.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus1.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus1.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 4}
+13.3130 	EXP 	Stim: autoDraw = False
+13.3130 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus1.png'
+13.3130 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus1.png'
+13.3130 	EXP 	Stim: autoDraw = True
+13.3295 	EXP 	New trial (rep=0, index=4): {'NumberLetter': 5, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-control_1_1linestimulus2.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus2.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus2.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 5}
+13.3924 	DATA 	Keypress: 3
+13.3926 	DATA 	Keypress: 1
+13.3972 	EXP 	Stim: autoDraw = False
+13.3972 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus2.png'
+13.3972 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus2.png'
+13.3972 	EXP 	Stim: autoDraw = True
+13.4063 	DATA 	Keypress: 2
+13.4967 	DATA 	Keypress: 1
+13.5004 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus2.png'
+13.5382 	DATA 	Keypress: 2
+13.5383 	DATA 	Keypress: 3
+13.5417 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus2.png'
+13.5450 	EXP 	New trial (rep=0, index=5): {'NumberLetter': 6, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_1linestimulus3.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus3.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus3.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 6}
+13.6125 	EXP 	Stim: autoDraw = False
+13.6125 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus3.png'
+13.6125 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus3.png'
+13.6125 	EXP 	Stim: autoDraw = True
+13.6354 	DATA 	Keypress: 3
+13.6771 	DATA 	Keypress: 1
+13.6807 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus3.png'
+13.7196 	DATA 	Keypress: 2
+13.7263 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus3.png'
+13.7645 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus3.png'
+13.8022 	DATA 	Keypress: 3
+13.8059 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus3.png'
+13.8473 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus3.png'
+13.8900 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus3.png'
+13.9309 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus3.png'
+13.9723 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus3.png'
+14.0104 	DATA 	Keypress: 1
+14.0140 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus3.png'
+14.0177 	EXP 	New trial (rep=0, index=6): {'NumberLetter': 7, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_1linestimulus4.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus4.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus4.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 7}
+14.0799 	DATA 	Keypress: 2
+14.0840 	EXP 	Stim: autoDraw = False
+14.0840 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus4.png'
+14.0840 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus4.png'
+14.0840 	EXP 	Stim: autoDraw = True
+14.1250 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus4.png'
+14.1632 	DATA 	Keypress: 3
+14.1668 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus4.png'
+14.1704 	EXP 	New trial (rep=0, index=7): {'NumberLetter': 8, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-control_1_1linestimulus4.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus5.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus5.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 8}
+14.2327 	DATA 	Keypress: 1
+14.2328 	DATA 	Keypress: 2
+14.2368 	EXP 	Stim: autoDraw = False
+14.2368 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus5.png'
+14.2368 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus5.png'
+14.2368 	EXP 	Stim: autoDraw = True
+14.3439 	DATA 	Keypress: 1
+14.3440 	DATA 	Keypress: 2
+14.3478 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus5.png'
+14.3509 	EXP 	New trial (rep=0, index=8): {'NumberLetter': 9, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_1linestimulus6.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus6.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus6.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 9}
+14.4134 	DATA 	Keypress: 3
+14.4175 	EXP 	Stim: autoDraw = False
+14.4175 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus6.png'
+14.4175 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus6.png'
+14.4175 	EXP 	Stim: autoDraw = True
+14.4480 	DATA 	Keypress: 3
+14.4542 	EXP 	New trial (rep=0, index=9): {'NumberLetter': 10, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-control_1_1linestimulus7.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus7.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus7.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 10}
+14.5177 	DATA 	Keypress: 1
+14.5179 	DATA 	Keypress: 2
+14.5217 	EXP 	Stim: autoDraw = False
+14.5217 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus7.png'
+14.5217 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus7.png'
+14.5217 	EXP 	Stim: autoDraw = True
+14.5868 	DATA 	Keypress: 1
+14.6293 	DATA 	Keypress: 2
+14.6295 	DATA 	Keypress: 3
+14.6324 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus7.png'
+14.6369 	EXP 	New trial (rep=0, index=10): {'NumberLetter': 11, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_1linestimulus8.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus8.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus8.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 11}
+14.7023 	EXP 	Stim: autoDraw = False
+14.7023 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus8.png'
+14.7023 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus8.png'
+14.7023 	EXP 	Stim: autoDraw = True
+14.7201 	EXP 	New trial (rep=0, index=11): {'NumberLetter': 12, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_1linestimulus9.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus9.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus9.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 12}
+14.7813 	DATA 	Keypress: 3
+14.7815 	DATA 	Keypress: 1
+14.7854 	EXP 	Stim: autoDraw = False
+14.7854 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus9.png'
+14.7854 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus9.png'
+14.7854 	EXP 	Stim: autoDraw = True
+14.7954 	DATA 	Keypress: 2
+14.8577 	EXP 	New trial (rep=0, index=12): {'NumberLetter': 13, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_1linestimulus10.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus10.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus10.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 13}
+14.9270 	DATA 	Keypress: 1
+14.9272 	DATA 	Keypress: 2
+14.9273 	DATA 	Keypress: 3
+14.9316 	EXP 	Stim: autoDraw = False
+14.9316 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus10.png'
+14.9316 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus10.png'
+14.9316 	EXP 	Stim: autoDraw = True
+14.9723 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus10.png'
+15.0178 	DATA 	Keypress: 3
+15.0181 	DATA 	Keypress: 1
+15.0237 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus10.png'
+15.0280 	EXP 	New trial (rep=0, index=13): {'NumberLetter': 14, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_1linestimulus11.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus11.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus11.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 14}
+15.1080 	DATA 	Keypress: 2
+15.1127 	EXP 	Stim: autoDraw = False
+15.1127 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus11.png'
+15.1127 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus11.png'
+15.1127 	EXP 	Stim: autoDraw = True
+15.1218 	DATA 	Keypress: 1
+15.1285 	EXP 	New trial (rep=0, index=14): {'NumberLetter': 15, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_1linestimulus12.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus12.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus12.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 15}
+15.2051 	DATA 	Keypress: 2
+15.2055 	DATA 	Keypress: 3
+15.2115 	EXP 	Stim: autoDraw = False
+15.2115 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus12.png'
+15.2115 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus12.png'
+15.2115 	EXP 	Stim: autoDraw = True
+15.2612 	DATA 	Keypress: 3
+15.2652 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus12.png'
+15.2696 	EXP 	New trial (rep=0, index=15): {'NumberLetter': 16, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_1linestimulus13.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus13.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus13.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 16}
+15.3512 	DATA 	Keypress: 1
+15.3514 	DATA 	Keypress: 2
+15.3559 	EXP 	Stim: autoDraw = False
+15.3559 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus13.png'
+15.3559 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus13.png'
+15.3559 	EXP 	Stim: autoDraw = True
+15.3867 	EXP 	New trial (rep=0, index=16): {'NumberLetter': 17, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-control_1_1linestimulus14.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus14.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus14.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 17}
+15.4620 	DATA 	Keypress: 1
+15.4623 	DATA 	Keypress: 3
+15.4624 	DATA 	Keypress: 2
+15.4669 	EXP 	Stim: autoDraw = False
+15.4669 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus14.png'
+15.4669 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus14.png'
+15.4669 	EXP 	Stim: autoDraw = True
+15.4709 	EXP 	New trial (rep=0, index=17): {'NumberLetter': 18, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_1linestimulus15.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus15.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus15.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 18}
+15.5382 	DATA 	Keypress: 3
+15.5422 	EXP 	Stim: autoDraw = False
+15.5422 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus15.png'
+15.5422 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus15.png'
+15.5422 	EXP 	Stim: autoDraw = True
+15.5798 	DATA 	Keypress: 1
+15.5834 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus15.png'
+15.6216 	DATA 	Keypress: 2
+15.6255 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus15.png'
+15.6667 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus15.png'
+15.6704 	EXP 	New trial (rep=0, index=18): {'NumberLetter': 19, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_1linestimulus16.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus16.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus16.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 19}
+15.7326 	DATA 	Keypress: 1
+15.7328 	DATA 	Keypress: 2
+15.7329 	DATA 	Keypress: 3
+15.7367 	EXP 	Stim: autoDraw = False
+15.7367 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus16.png'
+15.7367 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus16.png'
+15.7367 	EXP 	Stim: autoDraw = True
+15.7785 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus16.png'
+15.8159 	DATA 	Keypress: 3
+15.8195 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus16.png'
+15.8231 	EXP 	New trial (rep=0, index=19): {'NumberLetter': 20, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_1linestimulus17.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus17.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus17.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 20}
+15.8862 	DATA 	Keypress: 1
+15.8869 	DATA 	Keypress: 2
+15.8909 	EXP 	Stim: autoDraw = False
+15.8909 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus17.png'
+15.8909 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus17.png'
+15.8909 	EXP 	Stim: autoDraw = True
+15.9430 	EXP 	New trial (rep=0, index=20): {'NumberLetter': 21, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_1linestimulus18.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus18.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus18.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 21}
+16.0104 	DATA 	Keypress: 1
+16.0105 	DATA 	Keypress: 2
+16.0107 	DATA 	Keypress: 3
+16.0163 	EXP 	Stim: autoDraw = False
+16.0163 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus18.png'
+16.0163 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus18.png'
+16.0163 	EXP 	Stim: autoDraw = True
+16.0564 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus18.png'
+16.0940 	DATA 	Keypress: 3
+16.0979 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus18.png'
+16.1020 	EXP 	New trial (rep=0, index=21): {'NumberLetter': 22, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_1linestimulus19.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus19.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus19.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 22}
+16.1634 	DATA 	Keypress: 1
+16.1635 	DATA 	Keypress: 2
+16.1683 	EXP 	Stim: autoDraw = False
+16.1683 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus19.png'
+16.1683 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus19.png'
+16.1683 	EXP 	Stim: autoDraw = True
+16.2259 	DATA 	Keypress: 1
+16.2731 	EXP 	New trial (rep=0, index=22): {'NumberLetter': 23, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_1linestimulus20.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus20.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus20.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 23}
+16.3368 	DATA 	Keypress: 3
+16.3369 	DATA 	Keypress: 2
+16.3408 	EXP 	Stim: autoDraw = False
+16.3408 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus20.png'
+16.3408 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus20.png'
+16.3408 	EXP 	Stim: autoDraw = True
+16.3785 	DATA 	Keypress: 3
+16.3819 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus20.png'
+16.3855 	EXP 	New trial (rep=0, index=23): {'NumberLetter': 24, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_1linestimulus21.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus21.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus21.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 24}
+16.4482 	DATA 	Keypress: 1
+16.4509 	DATA 	Keypress: 2
+16.4535 	EXP 	Stim: autoDraw = False
+16.4535 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus21.png'
+16.4535 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus21.png'
+16.4535 	EXP 	Stim: autoDraw = True
+16.5181 	EXP 	New trial (rep=0, index=24): {'NumberLetter': 25, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_1linestimulus22.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus22.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus22.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 25}
+16.5867 	DATA 	Keypress: 1
+16.5869 	DATA 	Keypress: 3
+16.5870 	DATA 	Keypress: 2
+16.5910 	EXP 	Stim: autoDraw = False
+16.5910 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus22.png'
+16.5910 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus22.png'
+16.5910 	EXP 	Stim: autoDraw = True
+16.6323 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus22.png'
+16.6705 	DATA 	Keypress: 3
+16.6707 	DATA 	Keypress: 1
+16.6737 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus22.png'
+16.6770 	EXP 	New trial (rep=0, index=25): {'NumberLetter': None, 'corrAns': None, 'Correct': None, 'StimFile': 'TMTstop-control_1_1linestimulus23.png', 'Correct_StimFile': 'TMTstop-control_1_1greenlinestimulus23.png', 'False_StimFile': 'TMTstop-control_1_1redlinestimulus23.png', 'Version': 'TMT-Control', 'Block': 1, 'TrialNumber_session': 'Feedback_last'}
+16.7396 	DATA 	Keypress: 2
+16.7441 	EXP 	Stim: autoDraw = False
+16.7441 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus23.png'
+16.7441 	EXP 	Stim: image = 'TMTstop-control_1_1greenlinestimulus23.png'
+16.7441 	EXP 	Stim: autoDraw = True
+16.7761 	DATA 	Keypress: 1
+16.8197 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+16.8580 	DATA 	Keypress: 3
+16.8580 	DATA 	Keypress: 2
+16.8620 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+16.9028 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+16.9409 	DATA 	Keypress: 3
+16.9447 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+16.9825 	DATA 	Keypress: 1
+16.9860 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.0243 	DATA 	Keypress: 2
+17.0279 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.0682 	DATA 	Keypress: 3
+17.0705 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.1111 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.1533 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.1944 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.2379 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.2778 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.3199 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.3613 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.4030 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.4444 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.4862 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.5280 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.5695 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.6113 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.6596 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.7024 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.7436 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.8176 	EXP 	Stim: image = 'TMTstop-control_1_1redlinestimulus23.png'
+17.8176 	EXP 	Stim: autoDraw = False
+17.8176 	EXP 	polygon: autoDraw = True
+20.7845 	EXP 	New trial (rep=0, index=1): {'Block_file': 'TMTstop-Control_1_2.xlsx', 'Condition_rows': '26:52'}
+20.8423 	EXP 	Imported TMTstop-control_1_merged.xlsx as conditions, 26 conditions, 9 params
+20.8427 	EXP 	Created sequence: sequential, trialTypes=26, nReps=1, seed=None
+20.8430 	EXP 	New trial (rep=0, index=0): {'NumberLetter': 1, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_2.png', 'Correct_StimFile': 'TMTstop-control_1_2.png', 'False_StimFile': 'TMTstop-control_1_2.png', 'Version': 'TMT-Control', 'Block': 2, 'TrialNumber_session': 26}
+20.8433 	WARNING 	Requested image 'TMTstop-control_1_2.png' not found but similar filename 'TMTstop-control_1_2.jpg' exists. This will be used instead but changing the filename is advised.
+20.8749 	EXP 	polygon: autoDraw = False
+20.8749 	EXP 	Stim: image = 'TMTstop-control_1_2.png'
+20.8749 	EXP 	Stim: autoDraw = True
+21.3160 	DATA 	Keypress: 3
+21.3207 	WARNING 	Requested image 'TMTstop-control_1_2.png' not found but similar filename 'TMTstop-control_1_2.jpg' exists. This will be used instead but changing the filename is advised.
+21.3541 	EXP 	Stim: image = 'TMTstop-control_1_2.png'
+21.3558 	WARNING 	Requested image 'TMTstop-control_1_2.png' not found but similar filename 'TMTstop-control_1_2.jpg' exists. This will be used instead but changing the filename is advised.
+21.3889 	EXP 	Stim: image = 'TMTstop-control_1_2.png'
+21.3903 	WARNING 	Requested image 'TMTstop-control_1_2.png' not found but similar filename 'TMTstop-control_1_2.jpg' exists. This will be used instead but changing the filename is advised.
+21.4243 	EXP 	Stim: image = 'TMTstop-control_1_2.png'
+21.4261 	WARNING 	Requested image 'TMTstop-control_1_2.png' not found but similar filename 'TMTstop-control_1_2.jpg' exists. This will be used instead but changing the filename is advised.
+21.4583 	EXP 	Stim: image = 'TMTstop-control_1_2.png'
+21.4602 	WARNING 	Requested image 'TMTstop-control_1_2.png' not found but similar filename 'TMTstop-control_1_2.jpg' exists. This will be used instead but changing the filename is advised.
+21.4930 	EXP 	Stim: image = 'TMTstop-control_1_2.png'
+21.4948 	WARNING 	Requested image 'TMTstop-control_1_2.png' not found but similar filename 'TMTstop-control_1_2.jpg' exists. This will be used instead but changing the filename is advised.
+21.5278 	EXP 	Stim: image = 'TMTstop-control_1_2.png'
+21.5295 	WARNING 	Requested image 'TMTstop-control_1_2.png' not found but similar filename 'TMTstop-control_1_2.jpg' exists. This will be used instead but changing the filename is advised.
+21.5521 	DATA 	Keypress: 3
+21.5557 	EXP 	Stim: image = 'TMTstop-control_1_2.png'
+21.5572 	WARNING 	Requested image 'TMTstop-control_1_2.png' not found but similar filename 'TMTstop-control_1_2.jpg' exists. This will be used instead but changing the filename is advised.
+21.5902 	EXP 	Stim: image = 'TMTstop-control_1_2.png'
+21.5919 	WARNING 	Requested image 'TMTstop-control_1_2.png' not found but similar filename 'TMTstop-control_1_2.jpg' exists. This will be used instead but changing the filename is advised.
+21.6251 	EXP 	Stim: image = 'TMTstop-control_1_2.png'
+21.6269 	WARNING 	Requested image 'TMTstop-control_1_2.png' not found but similar filename 'TMTstop-control_1_2.jpg' exists. This will be used instead but changing the filename is advised.
+21.6595 	EXP 	Stim: image = 'TMTstop-control_1_2.png'
+21.6613 	WARNING 	Requested image 'TMTstop-control_1_2.png' not found but similar filename 'TMTstop-control_1_2.jpg' exists. This will be used instead but changing the filename is advised.
+21.6944 	EXP 	Stim: image = 'TMTstop-control_1_2.png'
+21.6959 	WARNING 	Requested image 'TMTstop-control_1_2.png' not found but similar filename 'TMTstop-control_1_2.jpg' exists. This will be used instead but changing the filename is advised.
+21.7291 	EXP 	Stim: image = 'TMTstop-control_1_2.png'
+21.7309 	WARNING 	Requested image 'TMTstop-control_1_2.png' not found but similar filename 'TMTstop-control_1_2.jpg' exists. This will be used instead but changing the filename is advised.
+21.7655 	EXP 	Stim: image = 'TMTstop-control_1_2.png'
+21.7672 	WARNING 	Requested image 'TMTstop-control_1_2.png' not found but similar filename 'TMTstop-control_1_2.jpg' exists. This will be used instead but changing the filename is advised.
+21.7950 	DATA 	Keypress: 1
+21.7986 	EXP 	Stim: image = 'TMTstop-control_1_2.png'
+21.8019 	EXP 	New trial (rep=0, index=1): {'NumberLetter': 2, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_2.png', 'Correct_StimFile': 'TMTstop-control_1_2firstgreen.png', 'False_StimFile': 'TMTstop-control_1_2firstred.png', 'Version': 'TMT-Control', 'Block': 2, 'TrialNumber_session': 27}
+21.8645 	DATA 	Keypress: 2
+21.8688 	EXP 	Stim: autoDraw = False
+21.8688 	EXP 	Stim: image = 'TMTstop-control_1_2firstgreen.png'
+21.8688 	EXP 	Stim: image = 'TMTstop-control_1_2firstgreen.png'
+21.8688 	EXP 	Stim: autoDraw = True
+21.9097 	EXP 	Stim: image = 'TMTstop-control_1_2firstred.png'
+21.9513 	EXP 	Stim: image = 'TMTstop-control_1_2firstred.png'
+21.9933 	EXP 	Stim: image = 'TMTstop-control_1_2firstred.png'
+22.0311 	DATA 	Keypress: 1
+22.0312 	DATA 	Keypress: 3
+22.0346 	EXP 	Stim: image = 'TMTstop-control_1_2firstred.png'
+22.0385 	EXP 	New trial (rep=0, index=2): {'NumberLetter': 3, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-control_1_2linestimulus0.png', 'Correct_StimFile': 'TMTstop-control_1_2greenlinestimulus0.png', 'False_StimFile': 'TMTstop-control_1_2redlinestimulus0.png', 'Version': 'TMT-Control', 'Block': 2, 'TrialNumber_session': 28}
+22.1005 	DATA 	Keypress: 2
+22.1045 	EXP 	Stim: autoDraw = False
+22.1045 	EXP 	Stim: image = 'TMTstop-control_1_2greenlinestimulus0.png'
+22.1045 	EXP 	Stim: image = 'TMTstop-control_1_2greenlinestimulus0.png'
+22.1045 	EXP 	Stim: autoDraw = True
+22.1423 	DATA 	Keypress: 3
+27.0277 	EXP 	Stim: autoDraw = False
+27.0277 	EXP 	polygon: autoDraw = True
+29.9786 	EXP 	New trial (rep=0, index=2): {'Block_file': 'TMTstop-Control_1_3.xlsx', 'Condition_rows': '52:78'}
+30.0369 	EXP 	Imported TMTstop-control_1_merged.xlsx as conditions, 26 conditions, 9 params
+30.0373 	EXP 	Created sequence: sequential, trialTypes=26, nReps=1, seed=None
+30.0376 	EXP 	New trial (rep=0, index=0): {'NumberLetter': 1, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_3.png', 'Correct_StimFile': 'TMTstop-control_1_3.png', 'False_StimFile': 'TMTstop-control_1_3.png', 'Version': 'TMT-Control', 'Block': 3, 'TrialNumber_session': 51}
+30.0379 	WARNING 	Requested image 'TMTstop-control_1_3.png' not found but similar filename 'TMTstop-control_1_3.jpg' exists. This will be used instead but changing the filename is advised.
+30.1161 	EXP 	polygon: autoDraw = False
+30.1161 	EXP 	Stim: image = 'TMTstop-control_1_3.png'
+30.1161 	EXP 	Stim: autoDraw = True
+30.1161 	EXP 	Stim: autoDraw = False
+30.1161 	EXP 	polygon: autoDraw = True
+33.0635 	EXP 	New trial (rep=0, index=3): {'Block_file': 'TMTstop-Control_1_4.xlsx', 'Condition_rows': '78:104'}
+33.1218 	EXP 	Imported TMTstop-control_1_merged.xlsx as conditions, 26 conditions, 9 params
+33.1222 	EXP 	Created sequence: sequential, trialTypes=26, nReps=1, seed=None
+33.1224 	EXP 	New trial (rep=0, index=0): {'NumberLetter': 1, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-control_1_4.png', 'Correct_StimFile': 'TMTstop-control_1_4.png', 'False_StimFile': 'TMTstop-control_1_4.png', 'Version': 'TMT-Control', 'Block': 4, 'TrialNumber_session': 76}
+33.1227 	WARNING 	Requested image 'TMTstop-control_1_4.png' not found but similar filename 'TMTstop-control_1_4.jpg' exists. This will be used instead but changing the filename is advised.
+33.2064 	EXP 	polygon: autoDraw = False
+33.2064 	EXP 	Stim: image = 'TMTstop-control_1_4.png'
+33.2064 	EXP 	Stim: autoDraw = True
+33.2064 	EXP 	Stim: autoDraw = False
+33.2064 	EXP 	polygon: autoDraw = True
+36.1458 	EXP 	New trial (rep=0, index=4): {'Block_file': 'TMTstop-Control_1_5.xlsx', 'Condition_rows': '104:130'}
+36.2061 	EXP 	Imported TMTstop-control_1_merged.xlsx as conditions, 26 conditions, 9 params
+36.2065 	EXP 	Created sequence: sequential, trialTypes=26, nReps=1, seed=None
+36.2068 	EXP 	New trial (rep=0, index=0): {'NumberLetter': 1, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_5.png', 'Correct_StimFile': 'TMTstop-control_1_5.png', 'False_StimFile': 'TMTstop-control_1_5.png', 'Version': 'TMT-Control', 'Block': 5, 'TrialNumber_session': 101}
+36.2071 	WARNING 	Requested image 'TMTstop-control_1_5.png' not found but similar filename 'TMTstop-control_1_5.jpg' exists. This will be used instead but changing the filename is advised.
+36.3040 	EXP 	polygon: autoDraw = False
+36.3040 	EXP 	Stim: image = 'TMTstop-control_1_5.png'
+36.3040 	EXP 	Stim: autoDraw = True
+36.3040 	EXP 	Stim: autoDraw = False
+36.3040 	EXP 	polygon: autoDraw = True
+39.2357 	EXP 	New trial (rep=0, index=5): {'Block_file': 'TMTstop-Control_1_6.xlsx', 'Condition_rows': '130:156'}
+39.2959 	EXP 	Imported TMTstop-control_1_merged.xlsx as conditions, 26 conditions, 9 params
+39.2963 	EXP 	Created sequence: sequential, trialTypes=26, nReps=1, seed=None
+39.2965 	EXP 	New trial (rep=0, index=0): {'NumberLetter': 1, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_6.png', 'Correct_StimFile': 'TMTstop-control_1_6.png', 'False_StimFile': 'TMTstop-control_1_6.png', 'Version': 'TMT-Control', 'Block': 6, 'TrialNumber_session': 126}
+39.2968 	WARNING 	Requested image 'TMTstop-control_1_6.png' not found but similar filename 'TMTstop-control_1_6.jpg' exists. This will be used instead but changing the filename is advised.
+39.3939 	EXP 	polygon: autoDraw = False
+39.3939 	EXP 	Stim: image = 'TMTstop-control_1_6.png'
+39.3939 	EXP 	Stim: autoDraw = True
+39.3939 	EXP 	Stim: autoDraw = False
+39.3939 	EXP 	polygon: autoDraw = True
+39.4128 	DATA 	Keypress: esc
+39.6003 	DATA 	Keypress: esc
+39.6252 	EXP 	window1: mouseVisible = True

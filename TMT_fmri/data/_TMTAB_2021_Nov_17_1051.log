@@ -1,0 +1,171 @@
+2.2829 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['pyo'] (in that order).
+6.7011 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001B97678C710>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001B9767AB9E8>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1055]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='glfw')
+6.7011 	EXP 	window1: mouseVisible = True
+6.7012 	EXP 	window1: recordFrameIntervals = False
+6.7704 	EXP 	window1: recordFrameIntervals = True
+6.8466 	EXP 	window1: recordFrameIntervals = False
+7.1617 	EXP 	Created Instruct = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='InkedInstructBfinal_LI.jpg', interpolate=True, mask=None, maskParams=None, name='Instruct', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.8]), texRes=128.0, units='height', win=Window(...))
+7.3367 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.5, pos=array([ 0.  , -0.45]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=2.0)
+7.3415 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+7.3484 	EXP 	Created Stim_practice = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Stim_practice', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.777, 1.   ]), texRes=128.0, units='height', win=Window(...))
+7.3512 	EXP 	Created text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.02, italic=False, languageStyle='LTR', name='text_5', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+7.3543 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+7.3609 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.777, 1.   ]), texRes=128.0, units='height', win=Window(...))
+7.3643 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+7.3698 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.777, 1.   ]), texRes=128.0, units='height', win=Window(...))
+7.3734 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+7.3792 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.777, 1.   ]), texRes=128.0, units='height', win=Window(...))
+7.3826 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+7.3885 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.777, 1.   ]), texRes=128.0, units='height', win=Window(...))
+7.4246 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+7.4950 	EXP 	Instruct: autoDraw = True
+7.4950 	EXP 	text_2: autoDraw = True
+7.9616 	DATA 	Keypress: 2
+7.9771 	EXP 	Instruct: autoDraw = False
+7.9771 	EXP 	text_2: autoDraw = False
+7.9771 	EXP 	polygon: autoDraw = True
+8.1291 	DATA 	Keypress: 2
+10.9777 	EXP 	Created sequence: sequential, trialTypes=1, nReps=100, seed=None
+10.9782 	EXP 	New trial (rep=0, index=0): None
+10.9890 	EXP 	Imported TMTstop-A_1_practice.xlsx as conditions, 13 conditions, 6 params
+10.9893 	EXP 	Created sequence: sequential, trialTypes=13, nReps=1, seed=None
+10.9897 	EXP 	New trial (rep=0, index=0): {'NumberLetter': 1, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_practice.png', 'Correct_StimFile': 'TMTstop-A_1_practice.png', 'False_StimFile': 'TMTstop-A_1_practice.png', 'DurationTrial': 10}
+11.0569 	EXP 	polygon: autoDraw = False
+11.0569 	EXP 	Stim_practice: image = 'TMTstop-A_1_practice.png'
+11.0569 	EXP 	Stim_practice: autoDraw = True
+11.9818 	DATA 	Keypress: 1
+11.9908 	EXP 	New trial (rep=0, index=1): {'NumberLetter': 2, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_practice.png', 'Correct_StimFile': 'TMTstop-A_1_practicefirstgreen.png', 'False_StimFile': 'TMTstop-A_1_practicefirstred.png', 'DurationTrial': 10}
+12.0830 	EXP 	Stim_practice: autoDraw = False
+12.0830 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicefirstgreen.png'
+12.0830 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicefirstgreen.png'
+12.0830 	EXP 	Stim_practice: autoDraw = True
+12.1902 	DATA 	Keypress: 2
+12.1904 	DATA 	Keypress: 3
+12.2320 	DATA 	Keypress: 1
+12.2359 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicefirstred.png'
+12.2739 	DATA 	Keypress: 2
+12.2782 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicefirstred.png'
+12.3332 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicefirstred.png'
+12.3780 	DATA 	Keypress: 1
+12.3816 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicefirstred.png'
+12.4279 	DATA 	Keypress: 3
+12.4281 	DATA 	Keypress: 2
+12.4322 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicefirstred.png'
+12.4365 	EXP 	New trial (rep=0, index=2): {'NumberLetter': 3, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_practicelinestimulus0.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus0.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus0.png', 'DurationTrial': 10}
+12.5300 	DATA 	Keypress: 3
+12.5302 	DATA 	Keypress: 1
+12.5342 	EXP 	Stim_practice: autoDraw = False
+12.5342 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus0.png'
+12.5342 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus0.png'
+12.5342 	EXP 	Stim_practice: autoDraw = True
+12.6085 	DATA 	Keypress: 2
+12.6501 	DATA 	Keypress: 1
+12.7021 	EXP 	Stim_practice: image = 'TMTstop-A_1_practiceredlinestimulus0.png'
+12.7460 	DATA 	Keypress: 3
+12.7462 	DATA 	Keypress: 2
+12.7499 	EXP 	Stim_practice: image = 'TMTstop-A_1_practiceredlinestimulus0.png'
+12.7981 	EXP 	Stim_practice: image = 'TMTstop-A_1_practiceredlinestimulus0.png'
+12.8362 	DATA 	Keypress: 3
+12.8406 	EXP 	Stim_practice: image = 'TMTstop-A_1_practiceredlinestimulus0.png'
+12.8452 	EXP 	New trial (rep=0, index=3): {'NumberLetter': 4, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_practicelinestimulus1.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus1.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus1.png', 'DurationTrial': 10}
+12.9126 	DATA 	Keypress: 1
+12.9129 	DATA 	Keypress: 2
+12.9174 	EXP 	Stim_practice: autoDraw = False
+12.9174 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus1.png'
+12.9174 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus1.png'
+12.9174 	EXP 	Stim_practice: autoDraw = True
+12.9680 	DATA 	Keypress: 1
+12.9746 	EXP 	New trial (rep=0, index=4): {'NumberLetter': 5, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_practicelinestimulus2.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus2.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus2.png', 'DurationTrial': 10}
+13.0513 	DATA 	Keypress: 3
+13.0515 	DATA 	Keypress: 2
+13.0558 	EXP 	Stim_practice: autoDraw = False
+13.0558 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus2.png'
+13.0558 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus2.png'
+13.0558 	EXP 	Stim_practice: autoDraw = True
+13.1904 	DATA 	Keypress: 3
+13.1907 	DATA 	Keypress: 1
+13.1943 	EXP 	Stim_practice: image = 'TMTstop-A_1_practiceredlinestimulus2.png'
+13.2390 	DATA 	Keypress: 2
+13.2429 	EXP 	Stim_practice: image = 'TMTstop-A_1_practiceredlinestimulus2.png'
+13.2881 	DATA 	Keypress: 1
+13.2919 	EXP 	Stim_practice: image = 'TMTstop-A_1_practiceredlinestimulus2.png'
+13.3326 	EXP 	Stim_practice: image = 'TMTstop-A_1_practiceredlinestimulus2.png'
+13.3780 	DATA 	Keypress: 3
+13.3781 	DATA 	Keypress: 2
+13.3820 	EXP 	Stim_practice: image = 'TMTstop-A_1_practiceredlinestimulus2.png'
+13.3868 	EXP 	New trial (rep=0, index=5): {'NumberLetter': 6, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_practicelinestimulus3.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus3.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus3.png', 'DurationTrial': 10}
+13.4652 	EXP 	Stim_practice: autoDraw = False
+13.4652 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus3.png'
+13.4652 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus3.png'
+13.4652 	EXP 	Stim_practice: autoDraw = True
+13.4747 	DATA 	Keypress: 3
+13.4811 	EXP 	New trial (rep=0, index=6): {'NumberLetter': 7, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_practicelinestimulus4.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus4.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus4.png', 'DurationTrial': 10}
+13.5584 	DATA 	Keypress: 1
+13.5586 	DATA 	Keypress: 2
+13.5625 	EXP 	Stim_practice: autoDraw = False
+13.5625 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus4.png'
+13.5625 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus4.png'
+13.5625 	EXP 	Stim_practice: autoDraw = True
+13.6139 	DATA 	Keypress: 1
+13.6207 	EXP 	New trial (rep=0, index=7): {'NumberLetter': 8, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_practicelinestimulus5.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus5.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus5.png', 'DurationTrial': 10}
+13.6903 	DATA 	Keypress: 3
+13.6904 	DATA 	Keypress: 2
+13.6943 	EXP 	Stim_practice: autoDraw = False
+13.6943 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus5.png'
+13.6943 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus5.png'
+13.6943 	EXP 	Stim_practice: autoDraw = True
+13.8100 	EXP 	New trial (rep=0, index=8): {'NumberLetter': 9, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_practicelinestimulus6.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus6.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus6.png', 'DurationTrial': 10}
+13.8777 	DATA 	Keypress: 3
+13.8780 	DATA 	Keypress: 1
+13.8819 	EXP 	Stim_practice: autoDraw = False
+13.8819 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus6.png'
+13.8819 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus6.png'
+13.8819 	EXP 	Stim_practice: autoDraw = True
+13.8916 	DATA 	Keypress: 2
+13.9748 	DATA 	Keypress: 3
+14.0858 	DATA 	Keypress: 1
+14.1387 	EXP 	Stim_practice: image = 'TMTstop-A_1_practiceredlinestimulus6.png'
+14.1799 	EXP 	Stim_practice: image = 'TMTstop-A_1_practiceredlinestimulus6.png'
+14.2250 	DATA 	Keypress: 2
+14.2290 	EXP 	Stim_practice: image = 'TMTstop-A_1_practiceredlinestimulus6.png'
+14.2338 	EXP 	New trial (rep=0, index=9): {'NumberLetter': 10, 'corrAns': ['3'], 'StimFile': 'TMTstop-A_1_practicelinestimulus7.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus7.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus7.png', 'DurationTrial': 10}
+14.3213 	EXP 	Stim_practice: autoDraw = False
+14.3213 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus7.png'
+14.3213 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus7.png'
+14.3213 	EXP 	Stim_practice: autoDraw = True
+14.3300 	DATA 	Keypress: 1
+14.3499 	EXP 	New trial (rep=0, index=10): {'NumberLetter': 11, 'corrAns': ['1'], 'StimFile': 'TMTstop-A_1_practicelinestimulus8.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus8.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus8.png', 'DurationTrial': 10}
+14.4265 	DATA 	Keypress: 3
+14.4305 	EXP 	Stim_practice: autoDraw = False
+14.4305 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus8.png'
+14.4305 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus8.png'
+14.4305 	EXP 	Stim_practice: autoDraw = True
+14.4541 	DATA 	Keypress: 2
+14.5514 	DATA 	Keypress: 3
+14.9340 	EXP 	New trial (rep=0, index=11): {'NumberLetter': 12, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_practicelinestimulus9.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus9.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus9.png', 'DurationTrial': 10}
+15.0028 	DATA 	Keypress: 1
+15.0068 	EXP 	Stim_practice: autoDraw = False
+15.0068 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus9.png'
+15.0068 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus9.png'
+15.0068 	EXP 	Stim_practice: autoDraw = True
+15.1416 	DATA 	Keypress: 1
+15.3727 	EXP 	New trial (rep=0, index=12): {'NumberLetter': None, 'corrAns': None, 'StimFile': 'TMTstop-A_1_practicelinestimulus10.png', 'Correct_StimFile': 'TMTstop-A_1_practicegreenlinestimulus10.png', 'False_StimFile': 'TMTstop-A_1_practiceredlinestimulus10.png', 'DurationTrial': None}
+15.4402 	DATA 	Keypress: 2
+15.4443 	EXP 	Stim_practice: autoDraw = False
+15.4443 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus10.png'
+15.4443 	EXP 	Stim_practice: image = 'TMTstop-A_1_practicegreenlinestimulus10.png'
+15.4443 	EXP 	Stim_practice: autoDraw = True
+15.5374 	DATA 	Keypress: 2
+16.5111 	EXP 	Stim_practice: autoDraw = False
+16.5111 	EXP 	text_5: text = 'You have finished the practice. If you understood the task correctly please read on, otherwise ask the experiment leader or press X to restart the practice.\n\nFrom here on there will be 25 trails instead of 12. If you finish all trails you will get 25 new trails and start from 1. The experiments will end automatically after three minutes. \n\nPress 1, 2 or 3  to start the experiment.\n\n\n\n'
+16.5111 	EXP 	text_5: autoDraw = True
+16.5111 	EXP 	text_5: autoDraw = False
+16.5111 	EXP 	polygon: autoDraw = True
+19.5193 	EXP 	Imported TMTstop-A_1_1.xlsx as conditions, 26 conditions, 6 params
+19.5196 	EXP 	Created sequence: sequential, trialTypes=26, nReps=1, seed=None
+19.5198 	EXP 	New trial (rep=0, index=0): {'NumberLetter': 1, 'corrAns': ['2'], 'StimFile': 'TMTstop-A_1_1.png', 'Correct_StimFile': 'TMTstop-A_1_1.png', 'False_StimFile': 'TMTstop-A_1_1.png', 'DurationTrial': 10}
+19.5634 	EXP 	polygon: autoDraw = False
+19.5634 	EXP 	Stim: image = 'TMTstop-A_1_1.png'
+19.5634 	EXP 	Stim: autoDraw = True
+20.6273 	DATA 	Keypress: esc
+20.8140 	EXP 	window1: mouseVisible = True
