@@ -1,0 +1,80 @@
+1.7232 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['pyo'] (in that order).
+5.3770 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000229E6BD9EB8>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000229E6BC0198>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1055]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='glfw')
+5.3771 	EXP 	window1: mouseVisible = True
+5.3771 	EXP 	window1: recordFrameIntervals = False
+5.4457 	EXP 	window1: recordFrameIntervals = True
+5.5219 	EXP 	window1: recordFrameIntervals = False
+5.8063 	EXP 	Created Instruct = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='InkedInstructBfinal_LI.jpg', interpolate=True, mask=None, maskParams=None, name='Instruct', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.8]), texRes=128.0, units='height', win=Window(...))
+5.9150 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.5, pos=array([ 0.  , -0.45]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=2.0)
+5.9179 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1.777, 1.   ]), texRes=128.0, units='height', win=Window(...))
+5.9205 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='polygon', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+5.9381 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+5.9951 	EXP 	Instruct: autoDraw = True
+5.9951 	EXP 	text_2: autoDraw = True
+7.1928 	DATA 	Keypress: 1
+7.2077 	EXP 	Imported TMTstop-B_1_1.xlsx as conditions, 26 conditions, 6 params
+7.2081 	EXP 	Created sequence: sequential, trialTypes=26, nReps=1, seed=None
+7.2084 	EXP 	New trial (rep=0, index=0): {'NumberLetter': 1, 'corrAns': ['2'], 'StimFile': 'TMTstop-B_1_1.png', 'Correct_StimFile': 'TMTstop-B_1_1.png', 'False_StimFile': 'TMTstop-B_1_1.png', 'DurationTrial': 10}
+7.3081 	EXP 	Instruct: autoDraw = False
+7.3081 	EXP 	text_2: autoDraw = False
+7.3081 	EXP 	Stim: image = 'TMTstop-B_1_1.png'
+7.3081 	EXP 	Stim: image = 'TMTstop-B_1_1.png'
+7.3081 	EXP 	Stim: autoDraw = True
+7.3876 	DATA 	Keypress: 1
+7.9013 	EXP 	New trial (rep=0, index=1): {'NumberLetter': 'A', 'corrAns': ['1'], 'StimFile': 'TMTstop-B_1_1.png', 'Correct_StimFile': 'TMTstop-B_1_1firstgreen.png', 'False_StimFile': 'TMTstop-B_1_1firstred.png', 'DurationTrial': 10}
+7.9615 	EXP 	New trial (rep=0, index=2): {'NumberLetter': 2, 'corrAns': ['3'], 'StimFile': 'TMTstop-B_1_1linestimulus0.png', 'Correct_StimFile': 'TMTstop-B_1_1greenlinestimulus0.png', 'False_StimFile': 'TMTstop-B_1_1redlinestimulus0.png', 'DurationTrial': 10}
+8.0395 	DATA 	Keypress: 2
+8.0442 	EXP 	Stim: autoDraw = False
+8.0442 	EXP 	Stim: image = 'TMTstop-B_1_1firstgreen.png'
+8.0442 	EXP 	Stim: image = 'TMTstop-B_1_1firstgreen.png'
+8.0442 	EXP 	Stim: autoDraw = True
+8.0442 	EXP 	Stim: autoDraw = False
+8.0442 	EXP 	Stim: image = 'TMTstop-B_1_1greenlinestimulus0.png'
+8.0442 	EXP 	Stim: image = 'TMTstop-B_1_1redlinestimulus0.png'
+8.0442 	EXP 	Stim: autoDraw = True
+8.1576 	DATA 	Keypress: 2
+11.1921 	DATA 	Keypress: 2
+11.4845 	DATA 	Keypress: 2
+11.9641 	DATA 	Keypress: 3
+12.2343 	DATA 	Keypress: 3
+12.3174 	DATA 	Keypress: 1
+12.5744 	DATA 	Keypress: 1
+12.7133 	DATA 	Keypress: 2
+12.9769 	DATA 	Keypress: 2
+13.1921 	DATA 	Keypress: 3
+13.4839 	DATA 	Keypress: 1
+13.4984 	DATA 	Keypress: 3
+13.7200 	DATA 	Keypress: 1
+13.8728 	DATA 	Keypress: 2
+14.1715 	DATA 	Keypress: 3
+14.1853 	DATA 	Keypress: 2
+14.4781 	DATA 	Keypress: 3
+14.5461 	DATA 	Keypress: 1
+14.8103 	DATA 	Keypress: 2
+14.8400 	DATA 	Keypress: 1
+15.0186 	DATA 	Keypress: 3
+15.0815 	DATA 	Keypress: 2
+15.3171 	DATA 	Keypress: 1
+15.3450 	DATA 	Keypress: 3
+15.4498 	DATA 	Keypress: 2
+15.5753 	DATA 	Keypress: 1
+15.6168 	DATA 	Keypress: 3
+15.6864 	DATA 	Keypress: 2
+15.8385 	DATA 	Keypress: 1
+15.8661 	DATA 	Keypress: 3
+15.9215 	DATA 	Keypress: 2
+16.0265 	DATA 	Keypress: 1
+16.0535 	DATA 	Keypress: 3
+16.1092 	DATA 	Keypress: 2
+16.2478 	DATA 	Keypress: 1
+16.2619 	DATA 	Keypress: 3
+16.3308 	DATA 	Keypress: 2
+16.4284 	DATA 	Keypress: 1
+16.5046 	DATA 	Keypress: 2
+16.8726 	DATA 	Keypress: 2
+17.0463 	DATA 	Keypress: 2
+17.1234 	DATA 	Keypress: 3
+17.2901 	DATA 	Keypress: 3
+17.6021 	DATA 	Keypress: esc
+17.7705 	DATA 	Keypress: esc
+17.7992 	EXP 	window1: mouseVisible = True

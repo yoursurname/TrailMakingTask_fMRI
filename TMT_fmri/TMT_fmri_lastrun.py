@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on February 02, 2022, at 18:34
+    on March 30, 2022, at 15:24
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -89,7 +89,7 @@ Instruktioner_TMTControlClock = core.Clock()
 image_2 = visual.ImageStim(
     win=win,
     name='image_2', 
-    image='Instruktioner TMTstopControl.png', mask=None,
+    image='Instruktioner TMTstopA.png', mask=None,
     ori=0.0, pos=(0, 0), size=(1.28, 0.72),
     color=[1,1,1], colorSpace='rgb', opacity=None,
     flipHoriz=False, flipVert=False,
@@ -763,6 +763,14 @@ while continueRoutine:
         image_3.tStartRefresh = tThisFlipGlobal  # on global time
         win.timeOnFlip(image_3, 'tStartRefresh')  # time at next scr refresh
         image_3.setAutoDraw(True)
+    if image_3.status == STARTED:
+        # is it time to stop? (based on global clock, using actual start)
+        if tThisFlipGlobal > image_3.tStartRefresh + 10-frameTolerance:
+            # keep track of stop time/frame for later
+            image_3.tStop = t  # not accounting for scr refresh
+            image_3.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(image_3, 'tStopRefresh')  # time at next scr refresh
+            image_3.setAutoDraw(False)
     
     # *key_resp_7* updates
     waitOnFlip = False

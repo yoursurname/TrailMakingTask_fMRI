@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on February 02, 2022, at 15:50
+    on March 09, 2022, at 15:08
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -448,7 +448,7 @@ for thisRestartpractice in restartpractice:
             exec('{} = thisRestartpractice[paramName]'.format(paramName))
     
     # set up handler to look after randomisation of conditions etc
-    trials_practice = data.TrialHandler(nReps=1.0, method='sequential', 
+    trials_practice = data.TrialHandler(nReps=0.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=data.importConditions('TMTstop-A_1_practice.xlsx'),
         seed=None, name='trials_practice')
@@ -571,7 +571,7 @@ for thisRestartpractice in restartpractice:
                 thisComponent.setAutoDraw(False)
         # the Routine "PracticeTrial" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
-    # completed 1.0 repeats of 'trials_practice'
+    # completed 0.0 repeats of 'trials_practice'
     
     
     # ------Prepare to start Routine "ReadySetGo"-------

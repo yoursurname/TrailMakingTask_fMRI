@@ -107,7 +107,7 @@
         <Param name="Begin JS Routine" updates="constant" val="if (key_resp_2.corr) {&amp;#10;    msg = &quot;ring.wav&quot;;&amp;#10;    total_corr = (total_corr + 1);&amp;#10;    total_all = (total_all + 1);&amp;#10;    rt = key_resp.rt;&amp;#10;    Stim.setImage(Correct_StimFile);&amp;#10;} else {&amp;#10;    msg = &quot;buzzerwrong.wav&quot;;&amp;#10;    total_all = (total_all + 1);&amp;#10;    rt = key_resp.rt;&amp;#10;    Stim.setImage(False_StimFile);&amp;#10;}&amp;#10;if ((trials.thisN === 0)) {&amp;#10;    startTime = globalClock.getTime();&amp;#10;}&amp;#10;" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="if key_resp_2.corr:&amp;#10;  msg='ring.wav' &amp;#10;  total_corr=total_corr+1&amp;#10;  total_all=total_all+1&amp;#10;  rt=key_resp_2.rt&amp;#10;  Stim.setImage(Correct_StimFile)&amp;#10;  &amp;#10;&amp;#10;else:&amp;#10;  msg='buzzerwrong.wav'&amp;#10;  total_all=total_all+1&amp;#10;  rt=key_resp_2.rt&amp;#10;&amp;#10;&amp;#10;if TrialNumber_session == 1: # only on the first trial&amp;#10;    startTime = globalClock.getTime()&amp;#10;    &amp;#10;&amp;#10;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Both" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="if globalClock.getTime() - startTime &gt;= 15:&amp;#10;    currentLoop.finished = True&amp;#10;    continueRoutine = False&amp;#10;    &amp;#10;#Display last trial image to show result for 1 sec then ends&amp;#10;if currentLoop.thisN == 25 and (t &gt;= 1): &amp;#10;    continueRoutine = False&amp;#10;&amp;#10;#End trial only on correct responses&amp;#10;if len(key_resp_2.keys) &gt; 0 and [key_resp_2.keys[-1]] == corrAns:&amp;#10;    key_resp_2.corr = 1&amp;#10;    continueRoutine = False&amp;#10;       &amp;#10;#elif len(key_resp_2.keys) == 5:   # give up after 5 attempts.&amp;#10;    #continueRoutine = False # don't need to override resp.corr in this case&amp;#10;&amp;#10;elif len(key_resp_2.keys) &gt; 0 and [key_resp_2.keys] != corrAns:&amp;#10;    key_resp_2.corr = 0&amp;#10;    #continueRoutine = True&amp;#10;    Stim.setImage(False_StimFile)&amp;#10;    &amp;#10;attempts = len(key_resp_2.keys)    &amp;#10;thisExp.addData('Attempts', attempts)&amp;#10;&amp;#10;if len(key_resp_2.keys) == 1:&amp;#10;    first_attempt = 1&amp;#10;else:&amp;#10;    first_attempt = 0&amp;#10;    &amp;#10;thisExp.addData('First_attempt', first_attempt)&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="if globalClock.getTime() - startTime &gt;= 180:&amp;#10;    currentLoop.finished = True&amp;#10;    continueRoutine = False&amp;#10;    &amp;#10;#Display last trial image to show result for 1 sec then ends&amp;#10;if currentLoop.thisN == 25 and (t &gt;= 1): &amp;#10;    continueRoutine = False&amp;#10;&amp;#10;#End trial only on correct responses&amp;#10;if len(key_resp_2.keys) &gt; 0 and [key_resp_2.keys[-1]] == corrAns:&amp;#10;    key_resp_2.corr = 1&amp;#10;    continueRoutine = False&amp;#10;       &amp;#10;#elif len(key_resp_2.keys) == 5:   # give up after 5 attempts.&amp;#10;    #continueRoutine = False # don't need to override resp.corr in this case&amp;#10;&amp;#10;elif len(key_resp_2.keys) &gt; 0 and [key_resp_2.keys] != corrAns:&amp;#10;    key_resp_2.corr = 0&amp;#10;    #continueRoutine = True&amp;#10;    Stim.setImage(False_StimFile)&amp;#10;    &amp;#10;attempts = len(key_resp_2.keys)    &amp;#10;thisExp.addData('Attempts', attempts)&amp;#10;&amp;#10;if len(key_resp_2.keys) == 1:&amp;#10;    first_attempt = 1&amp;#10;else:&amp;#10;    first_attempt = 0&amp;#10;    &amp;#10;thisExp.addData('First_attempt', first_attempt)&amp;#10;&amp;#10;" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -185,7 +185,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="6" valType="num"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Time is up! &amp;#10;&amp;#10;Well done, you have finished the experiment.&amp;#10;&amp;#10;&amp;#10;&amp;#10;Tiden är ute!&amp;#10;&amp;#10;Bra jobbat, du har slutfört experimentet." valType="str"/>
+        <Param name="text" updates="constant" val="Tiden är ute!&amp;#10;&amp;#10;Bra jobbat, du har slutfört experimentet." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
@@ -469,7 +469,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
         <Param name="flipVert" updates="constant" val="False" valType="bool"/>
-        <Param name="image" updates="constant" val="Instruktioner TMTstopControl.png" valType="file"/>
+        <Param name="image" updates="constant" val="Instruktioner TMTstopA.png" valType="file"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="mask" updates="constant" val="" valType="str"/>
         <Param name="name" updates="None" val="image_2" valType="code"/>
@@ -533,24 +533,6 @@
         <Param name="texture resolution" updates="constant" val="128" valType="num"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
-      <KeyboardComponent name="key_resp_8">
-        <Param name="allowedKeys" updates="constant" val="" valType="list"/>
-        <Param name="correctAns" updates="constant" val="" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
-        <Param name="name" updates="None" val="key_resp_8" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="store" updates="constant" val="nothing" valType="str"/>
-        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
-        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
-      </KeyboardComponent>
     </Routine>
     <Routine name="Instruktioner_TMTA">
       <ImageComponent name="image_3">
@@ -574,29 +556,11 @@
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="stopVal" updates="constant" val="10" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="texture resolution" updates="constant" val="128" valType="num"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
-      <KeyboardComponent name="key_resp_7">
-        <Param name="allowedKeys" updates="constant" val="" valType="list"/>
-        <Param name="correctAns" updates="constant" val="" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
-        <Param name="name" updates="None" val="key_resp_7" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="store" updates="constant" val="nothing" valType="str"/>
-        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
-        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
-      </KeyboardComponent>
     </Routine>
     <Routine name="TimeCheck">
       <CodeComponent name="code_5">
@@ -607,8 +571,8 @@
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="if globalClock.getTime() - startTime &gt;= 15:&amp;#10;    Blocks_TMTControl.finished = True&amp;#10;    continueRoutine = False&amp;#10;" valType="extendedCode"/>
-        <Param name="Each JS Frame" updates="constant" val="if (((globalClock.getTime() - startTime) &gt;= 15)) {&amp;#10;    Blocks_TMTControl.finished = true;&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="if globalClock.getTime() - startTime &gt;= 180:&amp;#10;    Blocks_TMTControl.finished = True&amp;#10;    continueRoutine = False&amp;#10;" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="if (((globalClock.getTime() - startTime) &gt;= 180)) {&amp;#10;    Blocks_TMTControl.finished = true;&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
@@ -626,8 +590,8 @@
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="if globalClock.getTime() - startTime &gt;= 15:&amp;#10;    Blocks_TMTA.finished = True&amp;#10;    continueRoutine = False&amp;#10;" valType="extendedCode"/>
-        <Param name="Each JS Frame" updates="constant" val="if (((globalClock.getTime() - startTime) &gt;= 15)) {&amp;#10;    Blocks_TMTA.finished = true;&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="if globalClock.getTime() - startTime &gt;= 180:&amp;#10;    Blocks_TMTA.finished = True&amp;#10;    continueRoutine = False&amp;#10;" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="if (((globalClock.getTime() - startTime) &gt;= 180)) {&amp;#10;    Blocks_TMTA.finished = true;&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
@@ -645,8 +609,8 @@
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="if globalClock.getTime() - startTime &gt;= 15:&amp;#10;    Blocks_TMTB.finished = True&amp;#10;    continueRoutine = False&amp;#10;" valType="extendedCode"/>
-        <Param name="Each JS Frame" updates="constant" val="if (((globalClock.getTime() - startTime) &gt;= 15)) {&amp;#10;    Blocks_TMTB.finished = true;&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="if globalClock.getTime() - startTime &gt;= 180:&amp;#10;    Blocks_TMTB.finished = True&amp;#10;    continueRoutine = False&amp;#10;" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="if (((globalClock.getTime() - startTime) &gt;= 180)) {&amp;#10;    Blocks_TMTB.finished = true;&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
