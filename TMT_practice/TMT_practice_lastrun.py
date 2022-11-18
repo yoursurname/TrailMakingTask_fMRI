@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on May 05, 2022, at 13:15
+    on November 18, 2022, at 01:13
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -52,7 +52,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\emilo\\OneDrive - Lund University\\Experiment paradigms\\TMT_PsychoPY_new\\TMT_practice\\TMT_practice_lastrun.py',
+    originPath='C:\\Users\\emilo\\OneDrive - Lund University\\Jobb\\Experiments\\TMT_PsychoPY_new\\TMT_practice\\TMT_practice_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -66,9 +66,9 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Setup the Window
 win = visual.Window(
-    size=[1536, 864], fullscr=True, screen=0, 
+    size=[3440, 1440], fullscr=True, screen=0, 
     winType='glfw', allowGUI=False, allowStencil=False,
-    monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
+    monitor='testMonitor', color='white', colorSpace='rgb',
     blendMode='avg', useFBO=True, 
     units='height')
 # store frame rate of monitor if we can measure it
@@ -100,9 +100,9 @@ key_resp_6 = keyboard.Keyboard()
 FixCrossClock = core.Clock()
 polygon = visual.ShapeStim(
     win=win, name='polygon', vertices='cross',
-    size=(0.5, 0.5),
+    size=(0.1, 0.1),
     ori=0.0, pos=(0, 0),
-    lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
+    lineWidth=0.1,     colorSpace='rgb',  lineColor=None, fillColor='black',
     opacity=None, depth=0.0, interpolate=True)
 
 # Initialize components for Routine "trial"
@@ -141,9 +141,9 @@ key_resp_7 = keyboard.Keyboard()
 FixCrossClock = core.Clock()
 polygon = visual.ShapeStim(
     win=win, name='polygon', vertices='cross',
-    size=(0.5, 0.5),
+    size=(0.1, 0.1),
     ori=0.0, pos=(0, 0),
-    lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
+    lineWidth=0.1,     colorSpace='rgb',  lineColor=None, fillColor='black',
     opacity=None, depth=0.0, interpolate=True)
 
 # Initialize components for Routine "trial"
@@ -182,9 +182,9 @@ key_resp_8 = keyboard.Keyboard()
 FixCrossClock = core.Clock()
 polygon = visual.ShapeStim(
     win=win, name='polygon', vertices='cross',
-    size=(0.5, 0.5),
+    size=(0.1, 0.1),
     ori=0.0, pos=(0, 0),
-    lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
+    lineWidth=0.1,     colorSpace='rgb',  lineColor=None, fillColor='black',
     opacity=None, depth=0.0, interpolate=True)
 
 # Initialize components for Routine "trial"
@@ -213,7 +213,7 @@ text = visual.TextStim(win=win, name='text',
     text='Tiden är ute!\n\nBra jobbat, du har slutfört experimentet.',
     font='Open Sans',
     pos=(0, 0), height=0.04, wrapWidth=None, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
+    color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
 
