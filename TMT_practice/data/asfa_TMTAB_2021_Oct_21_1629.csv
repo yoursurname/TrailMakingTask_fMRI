@@ -1,8 +1,0 @@
-﻿NumberLetter,corrAns,StimFile,Correct_StimFile,False_StimFile,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,Instruct.started,Instruct.stopped,text_2.started,text_2.stopped,Stim.started,Stim.stopped,key_resp_2.keys,key_resp_2.corr,key_resp_2.rt,key_resp_2.started,key_resp_2.stopped,participant,session,date,expName,psychopyVersion,frameRate,
-1,2,TMT-control.jpg,None,None,0,0,0,0,7.38784859999987,None,7.38784859999987,None,8.185711499999798,None,1,0,22.104853100000128,8.185711499999798,None,asfa,001,2021_Oct_21_1629,TMTAB,2021.2.3,59.95904797016935,
-A,3,TMT-control.jpg,None,None,0,1,1,1,,,,,30.328779099999792,None,2,0,0.417698400000063,30.328779099999792,None,asfa,001,2021_Oct_21_1629,TMTAB,2021.2.3,59.95904797016935,
-2,1,TMT-control_linestimulus0.png,None,None,0,2,2,2,,,,,30.79576139999972,None,3,0,0.11316589999978532,30.79576139999972,None,asfa,001,2021_Oct_21_1629,TMTAB,2021.2.3,59.95904797016935,
-B,2,TMT-control_linestimulus1.png,None,None,0,3,3,3,,,,,30.962508499999785,None,3,0,0.30927499999961583,30.962508499999785,None,asfa,001,2021_Oct_21_1629,TMTAB,2021.2.3,59.95904797016935,
-3,3,TMT-control_linestimulus2.png,None,None,0,4,4,4,,,,,31.329365099999904,None,1,0,0.05620150000004287,31.329365099999904,None,asfa,001,2021_Oct_21_1629,TMTAB,2021.2.3,59.95904797016935,
-C,2,TMT-control_linestimulus3.png,None,None,0,5,5,5,,,,,31.44613769999978,None,2,1,0.04117270000006101,31.44613769999978,None,asfa,001,2021_Oct_21_1629,TMTAB,2021.2.3,59.95904797016935,
-4,1,TMT-control_linestimulus4.png,None,None,0,6,6,6,,,,,31.546144800000093,None,3,0,0.06450170000016442,31.546144800000093,None,asfa,001,2021_Oct_21_1629,TMTAB,2021.2.3,59.95904797016935,
