@@ -1,0 +1,654 @@
+2.2156 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['pyo'] (in that order).
+6.0316 	WARNING 	User requested fullscreen with size [3440 1440], but screen is actually [1920, 1080]. Using actual size
+6.8197 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([1, 1, 1]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000023161743BB0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000023163BDFFA0>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.8198 	EXP 	window1: mouseVisible = True
+6.8199 	EXP 	window1: mouseVisible = False
+6.8199 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+6.8199 	EXP 	window1: recordFrameIntervals = False
+6.9860 	EXP 	window1: recordFrameIntervals = True
+7.1695 	EXP 	Screen (0) actual frame rate measured at 60.20Hz
+7.1695 	EXP 	window1: recordFrameIntervals = False
+9.0298 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Instruktioner TMTstopA.png', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.28, 0.72]), texRes=128.0, units='height', win=Window(...))
+9.0326 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([0, 0, 0]), lineColorSpace='rgb', lineRGB=array([0, 0, 0]), lineWidth=0.1, name='polygon', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+9.0363 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.777, 1.   ]), texRes=128.0, units='height', win=Window(...))
+9.1113 	EXP 	Created image_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Instruktioner TMTstopA.png', interpolate=True, mask=None, maskParams=None, name='image_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.28, 0.72]), texRes=128.0, units='height', win=Window(...))
+9.1150 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([0, 0, 0]), lineColorSpace='rgb', lineRGB=array([0, 0, 0]), lineWidth=0.1, name='polygon', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+9.1184 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.777, 1.   ]), texRes=128.0, units='height', win=Window(...))
+9.1991 	EXP 	Created image_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='Instruktioner TMTstopB.png', interpolate=True, mask=None, maskParams=None, name='image_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.28, 0.72]), texRes=128.0, units='height', win=Window(...))
+9.2003 	EXP 	Created polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([0, 0, 0]), lineColorSpace='rgb', lineRGB=array([0, 0, 0]), lineWidth=0.1, name='polygon', opacity=0.5, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+9.2038 	EXP 	Created Stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Stim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1.777, 1.   ]), texRes=128.0, units='height', win=Window(...))
+9.2767 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+9.2898 	EXP 	image_2: autoDraw = True
+24.4864 	DATA 	Keypress: space
+24.5012 	EXP 	image_2: autoDraw = False
+24.5012 	EXP 	polygon: autoDraw = True
+27.5122 	EXP 	Imported TMTstop-control_1_practice.xlsx as conditions, 26 conditions, 7 params
+27.5128 	EXP 	Created sequence: sequential, trialTypes=26, nReps=1, seed=None
+27.5130 	EXP 	New trial (rep=0, index=0): {'NumberLetter': 1, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-control_1_p.png', 'Correct_StimFile': 'TMTstop-control_1_p.png', 'False_StimFile': 'TMTstop-control_1_p.png', 'DurationTrial': 10}
+27.5137 	WARNING 	Requested image 'TMTstop-control_1_p.png' not found but similar filename 'TMTstop-control_1_p.jpg' exists. This will be used instead but changing the filename is advised.
+27.5694 	EXP 	polygon: autoDraw = False
+27.5694 	EXP 	Stim: image = 'TMTstop-control_1_p.png'
+27.5694 	EXP 	Stim: autoDraw = True
+29.1681 	EXP 	New trial (rep=0, index=1): {'NumberLetter': 2, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_p.png', 'Correct_StimFile': 'TMTstop-control_1_pfirstgreen.png', 'False_StimFile': 'TMTstop-control_1_pfirstred.png', 'DurationTrial': 10}
+29.2769 	DATA 	Keypress: 2
+29.2808 	EXP 	Stim: autoDraw = False
+29.2808 	EXP 	Stim: image = 'TMTstop-control_1_pfirstgreen.png'
+29.2808 	EXP 	Stim: image = 'TMTstop-control_1_pfirstgreen.png'
+29.2808 	EXP 	Stim: autoDraw = True
+29.7179 	EXP 	New trial (rep=0, index=2): {'NumberLetter': 3, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_plinestimulus0.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus0.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus0.png', 'DurationTrial': 10}
+29.7829 	DATA 	Keypress: 1
+29.7871 	EXP 	Stim: autoDraw = False
+29.7871 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus0.png'
+29.7871 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus0.png'
+29.7871 	EXP 	Stim: autoDraw = True
+30.4511 	EXP 	New trial (rep=0, index=3): {'NumberLetter': 4, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_plinestimulus1.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus1.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus1.png', 'DurationTrial': 10}
+30.5134 	DATA 	Keypress: 3
+30.5176 	EXP 	Stim: autoDraw = False
+30.5176 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus1.png'
+30.5176 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus1.png'
+30.5176 	EXP 	Stim: autoDraw = True
+30.9685 	EXP 	New trial (rep=0, index=4): {'NumberLetter': 5, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_plinestimulus2.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus2.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus2.png', 'DurationTrial': 10}
+31.0431 	DATA 	Keypress: 1
+31.0473 	EXP 	Stim: autoDraw = False
+31.0473 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus2.png'
+31.0473 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus2.png'
+31.0473 	EXP 	Stim: autoDraw = True
+31.5982 	DATA 	Keypress: 2
+31.6017 	EXP 	Stim: image = 'TMTstop-control_1_predlinestimulus2.png'
+31.6343 	EXP 	Stim: image = 'TMTstop-control_1_predlinestimulus2.png'
+31.6690 	EXP 	Stim: image = 'TMTstop-control_1_predlinestimulus2.png'
+31.7124 	EXP 	Stim: image = 'TMTstop-control_1_predlinestimulus2.png'
+31.7524 	EXP 	Stim: image = 'TMTstop-control_1_predlinestimulus2.png'
+31.7878 	EXP 	Stim: image = 'TMTstop-control_1_predlinestimulus2.png'
+31.8189 	DATA 	Keypress: 3
+31.8224 	EXP 	Stim: image = 'TMTstop-control_1_predlinestimulus2.png'
+31.8237 	EXP 	New trial (rep=0, index=5): {'NumberLetter': 6, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_plinestimulus3.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus3.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus3.png', 'DurationTrial': 10}
+31.9037 	EXP 	Stim: autoDraw = False
+31.9037 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus3.png'
+31.9037 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus3.png'
+31.9037 	EXP 	Stim: autoDraw = True
+32.3675 	EXP 	New trial (rep=0, index=6): {'NumberLetter': 7, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_plinestimulus4.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus4.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus4.png', 'DurationTrial': 10}
+32.4490 	DATA 	Keypress: 1
+32.4531 	EXP 	Stim: autoDraw = False
+32.4531 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus4.png'
+32.4531 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus4.png'
+32.4531 	EXP 	Stim: autoDraw = True
+32.6672 	EXP 	New trial (rep=0, index=7): {'NumberLetter': 8, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_plinestimulus4.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus5.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus5.png', 'DurationTrial': 10}
+32.7439 	DATA 	Keypress: 3
+32.7483 	EXP 	Stim: autoDraw = False
+32.7483 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus5.png'
+32.7483 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus5.png'
+32.7483 	EXP 	Stim: autoDraw = True
+33.1349 	EXP 	New trial (rep=0, index=8): {'NumberLetter': 9, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-control_1_plinestimulus6.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus6.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus6.png', 'DurationTrial': 10}
+33.1969 	DATA 	Keypress: 1
+33.2013 	EXP 	Stim: autoDraw = False
+33.2013 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus6.png'
+33.2013 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus6.png'
+33.2013 	EXP 	Stim: autoDraw = True
+33.4664 	EXP 	New trial (rep=0, index=9): {'NumberLetter': 10, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_plinestimulus7.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus7.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus7.png', 'DurationTrial': 10}
+33.5498 	DATA 	Keypress: 2
+33.5540 	EXP 	Stim: autoDraw = False
+33.5540 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus7.png'
+33.5540 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus7.png'
+33.5540 	EXP 	Stim: autoDraw = True
+33.8178 	EXP 	New trial (rep=0, index=10): {'NumberLetter': 11, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-control_1_plinestimulus8.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus8.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus8.png', 'DurationTrial': 10}
+33.8971 	DATA 	Keypress: 3
+33.9014 	EXP 	Stim: autoDraw = False
+33.9014 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus8.png'
+33.9014 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus8.png'
+33.9014 	EXP 	Stim: autoDraw = True
+34.1335 	EXP 	New trial (rep=0, index=11): {'NumberLetter': 12, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_plinestimulus9.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus9.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus9.png', 'DurationTrial': 10}
+34.2015 	DATA 	Keypress: 2
+34.2059 	EXP 	Stim: autoDraw = False
+34.2059 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus9.png'
+34.2059 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus9.png'
+34.2059 	EXP 	Stim: autoDraw = True
+34.5174 	EXP 	New trial (rep=0, index=12): {'NumberLetter': 13, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_plinestimulus10.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus10.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus10.png', 'DurationTrial': 1}
+34.5782 	DATA 	Keypress: 3
+34.5823 	EXP 	Stim: autoDraw = False
+34.5823 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus10.png'
+34.5823 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus10.png'
+34.5823 	EXP 	Stim: autoDraw = True
+34.8521 	DATA 	Keypress: 1
+34.8666 	EXP 	New trial (rep=0, index=13): {'NumberLetter': 14, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-control_1_plinestimulus11.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus11.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus11.png', 'DurationTrial': None}
+34.9466 	EXP 	Stim: autoDraw = False
+34.9466 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus11.png'
+34.9466 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus11.png'
+34.9466 	EXP 	Stim: autoDraw = True
+35.1834 	EXP 	New trial (rep=0, index=14): {'NumberLetter': 15, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_plinestimulus12.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus12.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus12.png', 'DurationTrial': None}
+35.2833 	DATA 	Keypress: 2
+35.2876 	EXP 	Stim: autoDraw = False
+35.2876 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus12.png'
+35.2876 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus12.png'
+35.2876 	EXP 	Stim: autoDraw = True
+35.5168 	EXP 	New trial (rep=0, index=15): {'NumberLetter': 16, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_plinestimulus13.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus13.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus13.png', 'DurationTrial': None}
+35.5777 	DATA 	Keypress: 3
+35.5821 	EXP 	Stim: autoDraw = False
+35.5821 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus13.png'
+35.5821 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus13.png'
+35.5821 	EXP 	Stim: autoDraw = True
+35.9167 	EXP 	New trial (rep=0, index=16): {'NumberLetter': 17, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_plinestimulus14.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus14.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus14.png', 'DurationTrial': None}
+35.9778 	DATA 	Keypress: 1
+35.9824 	EXP 	Stim: autoDraw = False
+35.9824 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus14.png'
+35.9824 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus14.png'
+35.9824 	EXP 	Stim: autoDraw = True
+36.2837 	EXP 	New trial (rep=0, index=17): {'NumberLetter': 18, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_plinestimulus15.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus15.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus15.png', 'DurationTrial': None}
+36.3442 	DATA 	Keypress: 3
+36.3482 	EXP 	Stim: autoDraw = False
+36.3482 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus15.png'
+36.3482 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus15.png'
+36.3482 	EXP 	Stim: autoDraw = True
+36.6005 	EXP 	New trial (rep=0, index=18): {'NumberLetter': 19, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_plinestimulus16.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus16.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus16.png', 'DurationTrial': None}
+36.6618 	DATA 	Keypress: 1
+36.6659 	EXP 	Stim: autoDraw = False
+36.6659 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus16.png'
+36.6659 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus16.png'
+36.6659 	EXP 	Stim: autoDraw = True
+36.9498 	EXP 	New trial (rep=0, index=19): {'NumberLetter': 20, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-control_1_plinestimulus17.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus17.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus17.png', 'DurationTrial': None}
+37.0107 	DATA 	Keypress: 3
+37.0152 	EXP 	Stim: autoDraw = False
+37.0152 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus17.png'
+37.0152 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus17.png'
+37.0152 	EXP 	Stim: autoDraw = True
+37.3168 	EXP 	New trial (rep=0, index=20): {'NumberLetter': 21, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_plinestimulus18.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus18.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus18.png', 'DurationTrial': None}
+37.3869 	DATA 	Keypress: 2
+37.3915 	EXP 	Stim: autoDraw = False
+37.3915 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus18.png'
+37.3915 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus18.png'
+37.3915 	EXP 	Stim: autoDraw = True
+37.6342 	EXP 	New trial (rep=0, index=21): {'NumberLetter': 22, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_plinestimulus19.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus19.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus19.png', 'DurationTrial': None}
+37.6967 	DATA 	Keypress: 1
+37.7009 	EXP 	Stim: autoDraw = False
+37.7009 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus19.png'
+37.7009 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus19.png'
+37.7009 	EXP 	Stim: autoDraw = True
+37.9499 	EXP 	New trial (rep=0, index=22): {'NumberLetter': 23, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-control_1_plinestimulus20.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus20.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus20.png', 'DurationTrial': None}
+38.0324 	DATA 	Keypress: 3
+38.0367 	EXP 	Stim: autoDraw = False
+38.0367 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus20.png'
+38.0367 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus20.png'
+38.0367 	EXP 	Stim: autoDraw = True
+38.4164 	EXP 	New trial (rep=0, index=23): {'NumberLetter': 24, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-control_1_plinestimulus21.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus21.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus21.png', 'DurationTrial': None}
+38.4953 	DATA 	Keypress: 2
+38.4999 	EXP 	Stim: autoDraw = False
+38.4999 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus21.png'
+38.4999 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus21.png'
+38.4999 	EXP 	Stim: autoDraw = True
+38.7663 	EXP 	New trial (rep=0, index=24): {'NumberLetter': 25, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-control_1_plinestimulus22.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus22.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus22.png', 'DurationTrial': None}
+38.8313 	DATA 	Keypress: 1
+38.8350 	EXP 	Stim: autoDraw = False
+38.8350 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus22.png'
+38.8350 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus22.png'
+38.8350 	EXP 	Stim: autoDraw = True
+39.1667 	EXP 	New trial (rep=0, index=25): {'NumberLetter': None, 'corrAns': None, 'Correct': None, 'StimFile': 'TMTstop-control_1_plinestimulus23.png', 'Correct_StimFile': 'TMTstop-control_1_pgreenlinestimulus23.png', 'False_StimFile': 'TMTstop-control_1_predlinestimulus23.png', 'DurationTrial': None}
+39.2370 	DATA 	Keypress: 3
+39.2413 	EXP 	Stim: autoDraw = False
+39.2413 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus23.png'
+39.2413 	EXP 	Stim: image = 'TMTstop-control_1_pgreenlinestimulus23.png'
+39.2413 	EXP 	Stim: autoDraw = True
+40.2147 	EXP 	Stim: autoDraw = False
+40.2147 	EXP 	image_3: autoDraw = True
+58.2652 	DATA 	Keypress: space
+58.2796 	EXP 	image_3: autoDraw = False
+58.2796 	EXP 	polygon: autoDraw = True
+61.2750 	EXP 	Imported TMTstop-A_1_practice.xlsx as conditions, 26 conditions, 7 params
+61.2756 	EXP 	Created sequence: sequential, trialTypes=26, nReps=1, seed=None
+61.2759 	EXP 	New trial (rep=0, index=0): {'NumberLetter': 1, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-A_1_p.png', 'Correct_StimFile': 'TMTstop-A_1_p.png', 'False_StimFile': 'TMTstop-A_1_p.png', 'DurationTrial': 10}
+61.3595 	EXP 	polygon: autoDraw = False
+61.3595 	EXP 	polygon: autoDraw = False
+61.3595 	EXP 	Stim: image = 'TMTstop-A_1_p.png'
+61.3595 	EXP 	Stim: image = 'TMTstop-A_1_p.png'
+61.3595 	EXP 	Stim: autoDraw = True
+63.2304 	EXP 	New trial (rep=0, index=1): {'NumberLetter': 2, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-A_1_p.png', 'Correct_StimFile': 'TMTstop-A_1_pfirstgreen.png', 'False_StimFile': 'TMTstop-A_1_pfirstred.png', 'DurationTrial': 10}
+63.2929 	DATA 	Keypress: 3
+63.2973 	EXP 	Stim: autoDraw = False
+63.2973 	EXP 	Stim: image = 'TMTstop-A_1_pfirstgreen.png'
+63.2973 	EXP 	Stim: image = 'TMTstop-A_1_pfirstgreen.png'
+63.2973 	EXP 	Stim: autoDraw = True
+63.7144 	EXP 	New trial (rep=0, index=2): {'NumberLetter': 3, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-A_1_plinestimulus0.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus0.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus0.png', 'DurationTrial': 10}
+63.7883 	DATA 	Keypress: 1
+63.7928 	EXP 	Stim: autoDraw = False
+63.7928 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus0.png'
+63.7928 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus0.png'
+63.7928 	EXP 	Stim: autoDraw = True
+63.9132 	EXP 	New trial (rep=0, index=3): {'NumberLetter': 4, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-A_1_plinestimulus1.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus1.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus1.png', 'DurationTrial': 10}
+63.9752 	DATA 	Keypress: 2
+63.9795 	EXP 	Stim: autoDraw = False
+63.9795 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus1.png'
+63.9795 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus1.png'
+63.9795 	EXP 	Stim: autoDraw = True
+64.0635 	DATA 	Keypress: 3
+64.0667 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus1.png'
+64.1089 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus1.png'
+64.1591 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus1.png'
+64.1984 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus1.png'
+64.2387 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus1.png'
+64.2728 	DATA 	Keypress: 1
+64.2766 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus1.png'
+64.2779 	EXP 	New trial (rep=0, index=4): {'NumberLetter': 5, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-A_1_plinestimulus2.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus2.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus2.png', 'DurationTrial': 10}
+64.3537 	EXP 	Stim: autoDraw = False
+64.3537 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus2.png'
+64.3537 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus2.png'
+64.3537 	EXP 	Stim: autoDraw = True
+64.3962 	EXP 	New trial (rep=0, index=5): {'NumberLetter': 6, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-A_1_plinestimulus3.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus3.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus3.png', 'DurationTrial': 10}
+64.4608 	DATA 	Keypress: 2
+64.4609 	DATA 	Keypress: 3
+64.4652 	EXP 	Stim: autoDraw = False
+64.4652 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus3.png'
+64.4652 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus3.png'
+64.4652 	EXP 	Stim: autoDraw = True
+64.5023 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus3.png'
+64.5388 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus3.png'
+64.5749 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus3.png'
+64.6255 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus3.png'
+64.6648 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus3.png'
+64.7045 	DATA 	Keypress: 1
+64.7081 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus3.png'
+64.7093 	EXP 	New trial (rep=0, index=6): {'NumberLetter': 7, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-A_1_plinestimulus4.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus4.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus4.png', 'DurationTrial': 10}
+64.7861 	EXP 	Stim: autoDraw = False
+64.7861 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus4.png'
+64.7861 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus4.png'
+64.7861 	EXP 	Stim: autoDraw = True
+64.8124 	EXP 	New trial (rep=0, index=7): {'NumberLetter': 8, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-A_1_plinestimulus5.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus5.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus5.png', 'DurationTrial': 10}
+64.8805 	DATA 	Keypress: 2
+64.8806 	DATA 	Keypress: 3
+64.8850 	EXP 	Stim: autoDraw = False
+64.8850 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus5.png'
+64.8850 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus5.png'
+64.8850 	EXP 	Stim: autoDraw = True
+64.9230 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus5.png'
+64.9608 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus5.png'
+64.9996 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus5.png'
+65.0381 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus5.png'
+65.0787 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus5.png'
+65.1141 	DATA 	Keypress: 1
+65.1190 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus5.png'
+65.1200 	EXP 	New trial (rep=0, index=8): {'NumberLetter': 9, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-A_1_plinestimulus6.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus6.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus6.png', 'DurationTrial': 10}
+65.1975 	EXP 	Stim: autoDraw = False
+65.1975 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus6.png'
+65.1975 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus6.png'
+65.1975 	EXP 	Stim: autoDraw = True
+65.2629 	EXP 	New trial (rep=0, index=9): {'NumberLetter': 10, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-A_1_plinestimulus7.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus7.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus7.png', 'DurationTrial': 10}
+65.3562 	DATA 	Keypress: 2
+65.3563 	DATA 	Keypress: 3
+65.3605 	EXP 	Stim: autoDraw = False
+65.3605 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus7.png'
+65.3605 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus7.png'
+65.3605 	EXP 	Stim: autoDraw = True
+65.4015 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus7.png'
+65.4396 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus7.png'
+65.4797 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus7.png'
+65.5328 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus7.png'
+65.5674 	DATA 	Keypress: 1
+65.5706 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus7.png'
+65.5717 	EXP 	New trial (rep=0, index=10): {'NumberLetter': 11, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-A_1_plinestimulus8.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus8.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus8.png', 'DurationTrial': 10}
+65.6389 	EXP 	Stim: autoDraw = False
+65.6389 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus8.png'
+65.6389 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus8.png'
+65.6389 	EXP 	Stim: autoDraw = True
+65.6464 	EXP 	New trial (rep=0, index=11): {'NumberLetter': 12, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-A_1_plinestimulus9.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus9.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus9.png', 'DurationTrial': 10}
+65.7117 	DATA 	Keypress: 2
+65.7118 	DATA 	Keypress: 3
+65.7157 	EXP 	Stim: autoDraw = False
+65.7157 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus9.png'
+65.7157 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus9.png'
+65.7157 	EXP 	Stim: autoDraw = True
+65.7559 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus9.png'
+65.8116 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus9.png'
+65.8559 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus9.png'
+65.9043 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus9.png'
+65.9530 	DATA 	Keypress: 1
+65.9559 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus9.png'
+65.9568 	EXP 	New trial (rep=0, index=12): {'NumberLetter': 13, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-A_1_plinestimulus10.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus10.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus10.png', 'DurationTrial': 1}
+66.0243 	DATA 	Keypress: 2
+66.0288 	EXP 	Stim: autoDraw = False
+66.0288 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus10.png'
+66.0288 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus10.png'
+66.0288 	EXP 	Stim: autoDraw = True
+66.0300 	EXP 	New trial (rep=0, index=13): {'NumberLetter': 14, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-A_1_plinestimulus11.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus11.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus11.png', 'DurationTrial': None}
+66.1131 	EXP 	Stim: autoDraw = False
+66.1131 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus11.png'
+66.1131 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus11.png'
+66.1131 	EXP 	Stim: autoDraw = True
+66.1291 	EXP 	New trial (rep=0, index=14): {'NumberLetter': 15, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-A_1_plinestimulus12.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus12.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus12.png', 'DurationTrial': None}
+66.2010 	DATA 	Keypress: 3
+66.2052 	EXP 	Stim: autoDraw = False
+66.2052 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus12.png'
+66.2052 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus12.png'
+66.2052 	EXP 	Stim: autoDraw = True
+66.3627 	EXP 	New trial (rep=0, index=15): {'NumberLetter': 16, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-A_1_plinestimulus13.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus13.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus13.png', 'DurationTrial': None}
+66.4282 	DATA 	Keypress: 1
+66.4283 	DATA 	Keypress: 2
+66.4321 	EXP 	Stim: autoDraw = False
+66.4321 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus13.png'
+66.4321 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus13.png'
+66.4321 	EXP 	Stim: autoDraw = True
+66.4712 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus13.png'
+66.5081 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus13.png'
+66.5461 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus13.png'
+66.5856 	DATA 	Keypress: 3
+66.5884 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus13.png'
+66.5896 	EXP 	New trial (rep=0, index=16): {'NumberLetter': 17, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-A_1_plinestimulus14.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus14.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus14.png', 'DurationTrial': None}
+66.6591 	EXP 	Stim: autoDraw = False
+66.6591 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus14.png'
+66.6591 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus14.png'
+66.6591 	EXP 	Stim: autoDraw = True
+66.7823 	DATA 	Keypress: 1
+66.7969 	EXP 	New trial (rep=0, index=17): {'NumberLetter': 18, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-A_1_plinestimulus15.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus15.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus15.png', 'DurationTrial': None}
+66.8882 	DATA 	Keypress: 2
+66.8925 	EXP 	Stim: autoDraw = False
+66.8925 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus15.png'
+66.8925 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus15.png'
+66.8925 	EXP 	Stim: autoDraw = True
+66.8938 	EXP 	New trial (rep=0, index=18): {'NumberLetter': 19, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-A_1_plinestimulus16.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus16.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus16.png', 'DurationTrial': None}
+66.9768 	DATA 	Keypress: 3
+66.9810 	EXP 	Stim: autoDraw = False
+66.9810 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus16.png'
+66.9810 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus16.png'
+66.9810 	EXP 	Stim: autoDraw = True
+66.9823 	EXP 	New trial (rep=0, index=19): {'NumberLetter': 20, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-A_1_plinestimulus17.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus17.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus17.png', 'DurationTrial': None}
+67.0679 	EXP 	Stim: autoDraw = False
+67.0679 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus17.png'
+67.0679 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus17.png'
+67.0679 	EXP 	Stim: autoDraw = True
+67.2500 	DATA 	Keypress: 1
+67.2501 	DATA 	Keypress: 2
+67.2535 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus17.png'
+67.2551 	EXP 	New trial (rep=0, index=20): {'NumberLetter': 21, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-A_1_plinestimulus18.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus18.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus18.png', 'DurationTrial': None}
+67.3770 	EXP 	Stim: autoDraw = False
+67.3770 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus18.png'
+67.3770 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus18.png'
+67.3770 	EXP 	Stim: autoDraw = True
+67.4124 	EXP 	New trial (rep=0, index=21): {'NumberLetter': 22, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-A_1_plinestimulus19.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus19.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus19.png', 'DurationTrial': None}
+67.4822 	DATA 	Keypress: 3
+67.4861 	EXP 	Stim: autoDraw = False
+67.4861 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus19.png'
+67.4861 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus19.png'
+67.4861 	EXP 	Stim: autoDraw = True
+67.7128 	EXP 	New trial (rep=0, index=22): {'NumberLetter': 23, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-A_1_plinestimulus20.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus20.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus20.png', 'DurationTrial': None}
+67.7809 	DATA 	Keypress: 1
+67.7810 	DATA 	Keypress: 2
+67.7851 	EXP 	Stim: autoDraw = False
+67.7851 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus20.png'
+67.7851 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus20.png'
+67.7851 	EXP 	Stim: autoDraw = True
+67.7866 	EXP 	New trial (rep=0, index=23): {'NumberLetter': 24, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-A_1_plinestimulus21.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus21.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus21.png', 'DurationTrial': None}
+67.8613 	DATA 	Keypress: 3
+67.8658 	EXP 	Stim: autoDraw = False
+67.8658 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus21.png'
+67.8658 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus21.png'
+67.8658 	EXP 	Stim: autoDraw = True
+67.8670 	EXP 	New trial (rep=0, index=24): {'NumberLetter': 25, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-A_1_plinestimulus22.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus22.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus22.png', 'DurationTrial': None}
+67.9324 	EXP 	Stim: autoDraw = False
+67.9324 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus22.png'
+67.9324 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus22.png'
+67.9324 	EXP 	Stim: autoDraw = True
+68.2298 	DATA 	Keypress: 1
+68.2332 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus22.png'
+68.2712 	DATA 	Keypress: 2
+68.2748 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus22.png'
+68.2770 	EXP 	New trial (rep=0, index=25): {'NumberLetter': None, 'corrAns': None, 'Correct': None, 'StimFile': 'TMTstop-A_1_plinestimulus23.png', 'Correct_StimFile': 'TMTstop-A_1_pgreenlinestimulus23.png', 'False_StimFile': 'TMTstop-A_1_predlinestimulus23.png', 'DurationTrial': None}
+68.3534 	EXP 	Stim: autoDraw = False
+68.3534 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus23.png'
+68.3534 	EXP 	Stim: image = 'TMTstop-A_1_pgreenlinestimulus23.png'
+68.3534 	EXP 	Stim: autoDraw = True
+68.3984 	DATA 	Keypress: 3
+68.4012 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+68.4470 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+68.4866 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+68.5249 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+68.5606 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+68.6174 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+68.6598 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+68.6954 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+68.7324 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+68.7720 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+68.8091 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+68.8477 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+68.8852 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+68.9301 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+68.9728 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+69.0187 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+69.0534 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+69.0913 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+69.1272 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+69.1639 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+69.2011 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+69.2499 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+69.2885 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+69.3771 	EXP 	Stim: image = 'TMTstop-A_1_predlinestimulus23.png'
+69.3771 	EXP 	Stim: autoDraw = False
+69.3771 	EXP 	image_4: autoDraw = True
+79.1454 	DATA 	Keypress: space
+79.1601 	EXP 	image_4: autoDraw = False
+79.1601 	EXP 	polygon: autoDraw = True
+82.1589 	EXP 	Imported TMTstop-B_1_practice.xlsx as conditions, 26 conditions, 7 params
+82.1595 	EXP 	Created sequence: sequential, trialTypes=26, nReps=1, seed=None
+82.1597 	EXP 	New trial (rep=0, index=0): {'NumberLetter': 1, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-B_1_p.png', 'Correct_StimFile': 'TMTstop-B_1_p.png', 'False_StimFile': 'TMTstop-B_1_p.png', 'DurationTrial': 10}
+82.2015 	EXP 	polygon: autoDraw = False
+82.2015 	EXP 	polygon: autoDraw = False
+82.2015 	EXP 	Stim: image = 'TMTstop-B_1_p.png'
+82.2015 	EXP 	Stim: autoDraw = True
+83.6446 	EXP 	New trial (rep=0, index=1): {'NumberLetter': 'A', 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-B_1_p.png', 'Correct_StimFile': 'TMTstop-B_1_pfirstgreen.png', 'False_StimFile': 'TMTstop-B_1_pfirstred.png', 'DurationTrial': 10}
+83.7210 	DATA 	Keypress: 3
+83.7251 	EXP 	Stim: autoDraw = False
+83.7251 	EXP 	Stim: image = 'TMTstop-B_1_pfirstgreen.png'
+83.7251 	EXP 	Stim: image = 'TMTstop-B_1_pfirstgreen.png'
+83.7251 	EXP 	Stim: autoDraw = True
+84.7273 	EXP 	New trial (rep=0, index=2): {'NumberLetter': 2, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-B_1_plinestimulus0.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus0.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus0.png', 'DurationTrial': 10}
+84.7910 	DATA 	Keypress: 1
+84.7952 	EXP 	Stim: autoDraw = False
+84.7952 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus0.png'
+84.7952 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus0.png'
+84.7952 	EXP 	Stim: autoDraw = True
+85.0437 	EXP 	New trial (rep=0, index=3): {'NumberLetter': 'B', 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-B_1_plinestimulus1.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus1.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus1.png', 'DurationTrial': 10}
+85.1170 	DATA 	Keypress: 2
+85.1211 	EXP 	Stim: autoDraw = False
+85.1211 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus1.png'
+85.1211 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus1.png'
+85.1211 	EXP 	Stim: autoDraw = True
+85.4362 	DATA 	Keypress: 1
+85.4397 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus1.png'
+85.4821 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus1.png'
+85.5125 	DATA 	Keypress: 2
+85.5160 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus1.png'
+85.5565 	DATA 	Keypress: 3
+85.5603 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus1.png'
+85.5619 	EXP 	New trial (rep=0, index=4): {'NumberLetter': 3, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-B_1_plinestimulus2.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus2.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus2.png', 'DurationTrial': 10}
+85.6623 	EXP 	Stim: autoDraw = False
+85.6623 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus2.png'
+85.6623 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus2.png'
+85.6623 	EXP 	Stim: autoDraw = True
+85.7936 	EXP 	New trial (rep=0, index=5): {'NumberLetter': 'C', 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-B_1_plinestimulus3.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus3.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus3.png', 'DurationTrial': 10}
+85.8575 	DATA 	Keypress: 1
+85.8618 	EXP 	Stim: autoDraw = False
+85.8618 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus3.png'
+85.8618 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus3.png'
+85.8618 	EXP 	Stim: autoDraw = True
+85.9431 	DATA 	Keypress: 2
+85.9464 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus3.png'
+85.9805 	DATA 	Keypress: 3
+85.9842 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus3.png'
+85.9859 	EXP 	New trial (rep=0, index=6): {'NumberLetter': 4, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-B_1_plinestimulus4.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus4.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus4.png', 'DurationTrial': 10}
+86.0784 	EXP 	Stim: autoDraw = False
+86.0784 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus4.png'
+86.0784 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus4.png'
+86.0784 	EXP 	Stim: autoDraw = True
+86.2106 	EXP 	New trial (rep=0, index=7): {'NumberLetter': 'D', 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-B_1_plinestimulus5.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus5.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus5.png', 'DurationTrial': 10}
+86.2757 	DATA 	Keypress: 1
+86.2758 	DATA 	Keypress: 2
+86.2799 	EXP 	Stim: autoDraw = False
+86.2799 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus5.png'
+86.2799 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus5.png'
+86.2799 	EXP 	Stim: autoDraw = True
+86.3571 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus5.png'
+86.4128 	DATA 	Keypress: 3
+86.4162 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus5.png'
+86.4174 	EXP 	New trial (rep=0, index=8): {'NumberLetter': 5, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-B_1_plinestimulus6.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus6.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus6.png', 'DurationTrial': 10}
+86.4778 	EXP 	Stim: autoDraw = False
+86.4778 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus6.png'
+86.4778 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus6.png'
+86.4778 	EXP 	Stim: autoDraw = True
+86.6423 	DATA 	Keypress: 1
+86.6458 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus6.png'
+86.6760 	DATA 	Keypress: 2
+86.6795 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus6.png'
+86.6807 	EXP 	New trial (rep=0, index=9): {'NumberLetter': 'E', 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-B_1_plinestimulus7.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus7.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus7.png', 'DurationTrial': 10}
+86.7424 	DATA 	Keypress: 3
+86.7468 	EXP 	Stim: autoDraw = False
+86.7468 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus7.png'
+86.7468 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus7.png'
+86.7468 	EXP 	Stim: autoDraw = True
+86.7833 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus7.png'
+86.8185 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus7.png'
+86.8534 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus7.png'
+86.8925 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus7.png'
+86.9380 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus7.png'
+86.9753 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus7.png'
+87.0090 	DATA 	Keypress: 1
+87.0091 	DATA 	Keypress: 2
+87.0126 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus7.png'
+87.0476 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus7.png'
+87.0829 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus7.png'
+87.1187 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus7.png'
+87.1534 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus7.png'
+87.1852 	DATA 	Keypress: 3
+87.1886 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus7.png'
+87.2249 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus7.png'
+87.2614 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus7.png'
+87.2970 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus7.png'
+87.3399 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus7.png'
+87.3779 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus7.png'
+87.4126 	DATA 	Keypress: 1
+87.4158 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus7.png'
+87.4168 	EXP 	New trial (rep=0, index=10): {'NumberLetter': 6, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-B_1_plinestimulus8.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus8.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus8.png', 'DurationTrial': 10}
+87.4872 	DATA 	Keypress: 2
+87.4916 	EXP 	Stim: autoDraw = False
+87.4916 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus8.png'
+87.4916 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus8.png'
+87.4916 	EXP 	Stim: autoDraw = True
+87.5273 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus8.png'
+87.5658 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus8.png'
+87.5670 	EXP 	New trial (rep=0, index=11): {'NumberLetter': 'F', 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-B_1_plinestimulus9.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus9.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus9.png', 'DurationTrial': 10}
+87.6362 	DATA 	Keypress: 3
+87.6409 	EXP 	Stim: autoDraw = False
+87.6409 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus9.png'
+87.6409 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus9.png'
+87.6409 	EXP 	Stim: autoDraw = True
+87.8430 	EXP 	New trial (rep=0, index=12): {'NumberLetter': 7, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-B_1_plinestimulus10.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus10.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus10.png', 'DurationTrial': 1}
+87.9092 	DATA 	Keypress: 1
+87.9093 	DATA 	Keypress: 2
+87.9130 	EXP 	Stim: autoDraw = False
+87.9130 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus10.png'
+87.9130 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus10.png'
+87.9130 	EXP 	Stim: autoDraw = True
+87.9505 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus10.png'
+87.9865 	DATA 	Keypress: 3
+87.9899 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus10.png'
+87.9910 	EXP 	New trial (rep=0, index=13): {'NumberLetter': 'G', 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-B_1_plinestimulus11.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus11.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus11.png', 'DurationTrial': None}
+88.0624 	EXP 	Stim: autoDraw = False
+88.0624 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus11.png'
+88.0624 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus11.png'
+88.0624 	EXP 	Stim: autoDraw = True
+88.2430 	EXP 	New trial (rep=0, index=14): {'NumberLetter': 8, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-B_1_plinestimulus12.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus12.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus12.png', 'DurationTrial': None}
+88.3091 	DATA 	Keypress: 1
+88.3092 	DATA 	Keypress: 2
+88.3124 	EXP 	Stim: autoDraw = False
+88.3124 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus12.png'
+88.3124 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus12.png'
+88.3124 	EXP 	Stim: autoDraw = True
+88.3135 	EXP 	New trial (rep=0, index=15): {'NumberLetter': 'H', 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-B_1_plinestimulus13.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus13.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus13.png', 'DurationTrial': None}
+88.3882 	DATA 	Keypress: 3
+88.3925 	EXP 	Stim: autoDraw = False
+88.3925 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus13.png'
+88.3925 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus13.png'
+88.3925 	EXP 	Stim: autoDraw = True
+88.3936 	EXP 	New trial (rep=0, index=16): {'NumberLetter': 9, 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-B_1_plinestimulus14.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus14.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus14.png', 'DurationTrial': None}
+88.4728 	EXP 	Stim: autoDraw = False
+88.4728 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus14.png'
+88.4728 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus14.png'
+88.4728 	EXP 	Stim: autoDraw = True
+88.6778 	DATA 	Keypress: 1
+88.6779 	DATA 	Keypress: 2
+88.6812 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus14.png'
+88.6824 	EXP 	New trial (rep=0, index=17): {'NumberLetter': 'I', 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-B_1_plinestimulus15.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus15.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus15.png', 'DurationTrial': None}
+88.7531 	EXP 	Stim: autoDraw = False
+88.7531 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus15.png'
+88.7531 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus15.png'
+88.7531 	EXP 	Stim: autoDraw = True
+88.7934 	EXP 	New trial (rep=0, index=18): {'NumberLetter': 10, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-B_1_plinestimulus16.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus16.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus16.png', 'DurationTrial': None}
+88.8587 	DATA 	Keypress: 3
+88.8627 	EXP 	Stim: autoDraw = False
+88.8627 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus16.png'
+88.8627 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus16.png'
+88.8627 	EXP 	Stim: autoDraw = True
+89.0432 	EXP 	New trial (rep=0, index=19): {'NumberLetter': 'J', 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-B_1_plinestimulus17.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus17.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus17.png', 'DurationTrial': None}
+89.1094 	DATA 	Keypress: 1
+89.1095 	DATA 	Keypress: 2
+89.1138 	EXP 	Stim: autoDraw = False
+89.1138 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus17.png'
+89.1138 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus17.png'
+89.1138 	EXP 	Stim: autoDraw = True
+89.1610 	DATA 	Keypress: 3
+89.1644 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus17.png'
+89.1655 	EXP 	New trial (rep=0, index=20): {'NumberLetter': 11, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-B_1_plinestimulus18.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus18.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus18.png', 'DurationTrial': None}
+89.2709 	EXP 	Stim: autoDraw = False
+89.2709 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus18.png'
+89.2709 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus18.png'
+89.2709 	EXP 	Stim: autoDraw = True
+89.4267 	EXP 	New trial (rep=0, index=21): {'NumberLetter': 'K', 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-B_1_plinestimulus19.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus19.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus19.png', 'DurationTrial': None}
+89.4901 	DATA 	Keypress: 1
+89.4903 	DATA 	Keypress: 2
+89.4943 	EXP 	Stim: autoDraw = False
+89.4943 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus19.png'
+89.4943 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus19.png'
+89.4943 	EXP 	Stim: autoDraw = True
+89.5306 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus19.png'
+89.5634 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus19.png'
+89.5947 	DATA 	Keypress: 3
+89.5980 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus19.png'
+89.5991 	EXP 	New trial (rep=0, index=22): {'NumberLetter': 12, 'corrAns': ['1'], 'Correct': 1, 'StimFile': 'TMTstop-B_1_plinestimulus20.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus20.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus20.png', 'DurationTrial': None}
+89.6621 	EXP 	Stim: autoDraw = False
+89.6621 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus20.png'
+89.6621 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus20.png'
+89.6621 	EXP 	Stim: autoDraw = True
+89.7936 	EXP 	New trial (rep=0, index=23): {'NumberLetter': 'L', 'corrAns': ['2'], 'Correct': 2, 'StimFile': 'TMTstop-B_1_plinestimulus21.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus21.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus21.png', 'DurationTrial': None}
+89.8552 	DATA 	Keypress: 1
+89.8553 	DATA 	Keypress: 2
+89.8594 	EXP 	Stim: autoDraw = False
+89.8594 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus21.png'
+89.8594 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus21.png'
+89.8594 	EXP 	Stim: autoDraw = True
+89.8605 	EXP 	New trial (rep=0, index=24): {'NumberLetter': 13, 'corrAns': ['3'], 'Correct': 3, 'StimFile': 'TMTstop-B_1_plinestimulus22.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus22.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus22.png', 'DurationTrial': None}
+89.9265 	EXP 	Stim: autoDraw = False
+89.9265 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus22.png'
+89.9265 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus22.png'
+89.9265 	EXP 	Stim: autoDraw = True
+89.9434 	EXP 	New trial (rep=0, index=25): {'NumberLetter': None, 'corrAns': None, 'Correct': None, 'StimFile': 'TMTstop-B_1_plinestimulus23.png', 'Correct_StimFile': 'TMTstop-B_1_pgreenlinestimulus23.png', 'False_StimFile': 'TMTstop-B_1_predlinestimulus23.png', 'DurationTrial': None}
+90.0088 	DATA 	Keypress: 3
+90.0126 	EXP 	Stim: autoDraw = False
+90.0126 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus23.png'
+90.0126 	EXP 	Stim: image = 'TMTstop-B_1_pgreenlinestimulus23.png'
+90.0126 	EXP 	Stim: autoDraw = True
+90.4922 	DATA 	Keypress: 1
+90.4923 	DATA 	Keypress: 2
+90.4958 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus23.png'
+90.5302 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus23.png'
+90.5659 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus23.png'
+90.5993 	DATA 	Keypress: 3
+90.6027 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus23.png'
+90.6431 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus23.png'
+90.6785 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus23.png'
+90.7127 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus23.png'
+90.7465 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus23.png'
+90.7831 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus23.png'
+90.8216 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus23.png'
+90.8680 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus23.png'
+90.9112 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus23.png'
+90.9754 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus23.png'
+91.0699 	EXP 	Stim: image = 'TMTstop-B_1_predlinestimulus23.png'
+91.0699 	EXP 	Stim: autoDraw = False
+91.0699 	EXP 	text: autoDraw = True
+94.6426 	DATA 	Keypress: escape
+94.9570 	EXP 	window1: mouseVisible = True
