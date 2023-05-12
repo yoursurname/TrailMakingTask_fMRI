@@ -9,7 +9,7 @@
     <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
     <Param val="{'participant': '', 'session': '001'}" valType="code" updates="None" name="Experiment info"/>
     <Param val="True" valType="bool" updates="None" name="Force stereo"/>
-    <Param val="False" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
     <Param val="" valType="str" updates="None" name="HTML path"/>
     <Param val="" valType="str" updates="None" name="Incomplete URL"/>
     <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
@@ -25,7 +25,7 @@
     <Param val="False" valType="bool" updates="None" name="Show mouse"/>
     <Param val="height" valType="str" updates="None" name="Units"/>
     <Param val="" valType="str" updates="None" name="Use version"/>
-    <Param val="[800, 500]" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="[1920, 1080]" valType="list" updates="None" name="Window size (pixels)"/>
     <Param val="avg" valType="str" updates="None" name="blendMode"/>
     <Param val="white" valType="color" updates="None" name="color"/>
     <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
@@ -81,7 +81,7 @@
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(1.60, 0.78)" valType="list" updates="constant" name="size"/>
+        <Param val="(1.40, 0.78)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="num" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="num" updates="None" name="startVal"/>
@@ -117,12 +117,12 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="&amp;#10;#Clear keyes from last trial to affect this trial&amp;#10;key_response.clearEvents()&amp;#10;first_attempt = 0" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Both" valType="str" updates="None" name="Code Type"/>
-        <Param val="#Finish trial when time limit is reached&amp;#10;if current_trial == &quot;control&quot; and globalClock.getTime() - startTime &gt;= control_time_limit:&amp;#10;    trials.finished = True&amp;#10;    continueRoutine = False&amp;#10;    print(f&quot;Time's up({control_time_limit} seconds)&quot;)&amp;#10;elif current_trial == &quot;TMTA&quot; and globalClock.getTime() - startTime &gt;= TMT_time_limit:&amp;#10;    trials.finished = True&amp;#10;    continueRoutine = False&amp;#10;    print(f&quot;Time's up({TMT_time_limit} seconds)&quot;)&amp;#10;elif current_trial == &quot;TMTB&quot; and globalClock.getTime() - startTime &gt;= TMT_time_limit:&amp;#10;    trials.finished = True&amp;#10;    continueRoutine = False&amp;#10;    print(f&quot;Time's up({TMT_time_limit} seconds)&quot;)&amp;#10;        &amp;#10; &amp;#10;attempts = len(key_response.keys)    &amp;#10;thisExp.addData('Attempts', attempts)&amp;#10;&amp;#10;if len(key_response.keys) == 1:&amp;#10;    first_attempt = 1&amp;#10;    &amp;#10;thisExp.addData('First_attempt', first_attempt)&amp;#10;&amp;#10;#Display last trial image to show result for 1 sec then ends&amp;#10;if currentLoop.thisN == 25 and t &gt;=0.6:&amp;#10;    currentLoop.thisN = -1&amp;#10;    continueRoutine = False&amp;#10;&amp;#10;#End trial only on correct responses&amp;#10;if len(key_response.keys) &gt; 0 and [key_response.keys[-1]] == corrAns:&amp;#10;    key_response.corr = 1&amp;#10;   # thisExp.addData('ResponseClock', Time_Since_Run.getTime())&amp;#10;    continueRoutine = False&amp;#10;elif len(key_response.keys) &gt; 0 and [key_response.keys] != corrAns:&amp;#10;    key_response.corr = 0&amp;#10;    Stim.setImage(False_StimFile)" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="#Finish trial when time limit is reached&amp;#10;if current_trial == &quot;control&quot; and globalClock.getTime() - startTime &gt;= control_time_limit:&amp;#10;    trials.finished = True&amp;#10;    continueRoutine = False&amp;#10;    print(f&quot;Time's up({control_time_limit} seconds)&quot;)&amp;#10;elif current_trial == &quot;TMTA&quot; and globalClock.getTime() - startTime &gt;= TMT_time_limit:&amp;#10;    trials.finished = True&amp;#10;    continueRoutine = False&amp;#10;    print(f&quot;Time's up({TMT_time_limit} seconds)&quot;)&amp;#10;elif current_trial == &quot;TMTB&quot; and globalClock.getTime() - startTime &gt;= TMT_time_limit:&amp;#10;    trials.finished = True&amp;#10;    continueRoutine = False&amp;#10;    print(f&quot;Time's up({TMT_time_limit} seconds)&quot;)&amp;#10;        &amp;#10; &amp;#10;attempts = len(key_response.keys)    &amp;#10;thisExp.addData('Attempts', attempts)&amp;#10;&amp;#10;if len(key_response.keys) == 1:&amp;#10;    first_attempt = 1&amp;#10;   &amp;#10;thisExp.addData('First_attempt', first_attempt)&amp;#10;&amp;#10;#Display last trial image to show result for 1 sec then ends&amp;#10;if currentLoop.thisN == 25 and t &gt;=0.6:&amp;#10;    currentLoop.thisN = -1&amp;#10;    continueRoutine = False&amp;#10;    thisExp.addData('TrialDuration', globalClock.getTime() - startTime)&amp;#10;&amp;#10;#End trial only on correct responses&amp;#10;if len(key_response.keys) &gt; 0 and [key_response.keys[-1]] == corrAns:&amp;#10;    key_response.corr = 1&amp;#10;   # thisExp.addData('ResponseClock', Time_Since_Run.getTime())&amp;#10;    continueRoutine = False&amp;#10;elif len(key_response.keys) &gt; 0 and [key_response.keys] != corrAns:&amp;#10;    key_response.corr = 0&amp;#10;    Stim.setImage(False_StimFile)" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="&amp;#10;thisExp.addData(&quot;TrialDuration&quot;, globalClock.getTime() - startTime)" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="&amp;#10;block.addData(&quot;TrialDuration&quot;, globalClock.getTime() - startTime)" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="tick_update" valType="code" updates="None" name="name"/>
       </CodeComponent>
@@ -137,7 +137,7 @@
         <Param val="" valType="num" updates="None" name="durationEstim"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="C:\Users\emilo\OneDrive - Lund University\Experiment paradigms\TMT_PsychoPY_new\Instructions TMTstopA.png" valType="file" updates="constant" name="image"/>
+        <Param val="Instructions_TMT_shorter.png" valType="file" updates="constant" name="image"/>
         <Param val="linear" valType="str" updates="constant" name="interpolate"/>
         <Param val="" valType="str" updates="constant" name="mask"/>
         <Param val="Instruct" valType="code" updates="None" name="name"/>
@@ -431,12 +431,12 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
-        <Param val="if (key_resp_7.keys) == 's':&amp;#10;    core.wait(8)&amp;#10;    continueRoutine = False&amp;#10;        &amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="if (key_resp_7.keys) == 's':&amp;#10;    core.wait(8)&amp;#10;    continueRoutine = False&amp;#10;    &amp;#10;        &amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="if ((key_resp_7.keys === &quot;s&quot;)) {&amp;#10;    core.wait(8);&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="Time_Since_Run = new core.MonotonicClock();&amp;#10;globalClock = new core.Clock();&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="Time_Since_Run = core.MonotonicClock()&amp;#10;globalClock = core.Clock()" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="print(f&quot;Total time: {globalClock.getTime()-expStart}&quot;)" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="console.log(`Total time: ${(globalClock.getTime() - expStart)}`);&amp;#10;" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="Time_Since_Run = new core.MonotonicClock();&amp;#10;globalClock = new core.Clock();&amp;#10;expStart = globalClock.getTime();&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="Time_Since_Run = core.MonotonicClock()&amp;#10;globalClock = core.Clock()&amp;#10;expStart = globalClock.getTime()" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="code_8" valType="code" updates="None" name="name"/>
       </CodeComponent>
