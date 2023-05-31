@@ -6,11 +6,11 @@ Created on Thu Oct 28 12:33:33 2021
 """
 
 import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.patches as patches
 import random
-import math
 from PIL import Image, ImageDraw, ImageFont
+import os
+import pandas as pd
+
 inf=np.inf
 pi=np.pi
 
@@ -121,104 +121,137 @@ diameter=65
 space=np.array([space_w, space_h])
 white=np.array([white_w, white_h])
 
-#Create a list for squarePos
-Squareoptions = ["Above", "Left", "Right"]
-n = 0
-Squares = ['x']
-while n < 25:
-    squarePos = random.choice(Squareoptions)
-    if Squares[n] != squarePos:
-        Squares.append(squarePos)
-        #print(squarePos)
-        n = n + 1
-del Squares[0]
+#Making several iterations of the TMT maps in one go
+iterations = [12]
+for it in iterations:
+
+    #Create a list for squarePos
+    Squareoptions = ["Above", "Left", "Right"]
+    n = 0
+    Squares = ['x']
+    while n < 25:
+        squarePos = random.choice(Squareoptions)
+        if Squares[n] != squarePos:
+            Squares.append(squarePos)
+            n = n + 1
+    del Squares[0]
 
 
-#TMT-Stop
-nodes=get_nodes(n_nodes, space, white, diameter)
-nodes=uncrosser(nodes, space, white, diameter)
+    #TMT-Stop
+    nodes=get_nodes(n_nodes, space, white, diameter)
+    nodes=uncrosser(nodes, space, white, diameter)
 
-im=Image.new('RGB', (space[0], space[1]), (255, 255, 255))
-draw=ImageDraw.Draw(im)
-font = ImageFont.truetype("arial.ttf", 44)
-# #TMT B
-# characters_num=[' 1', ' 2', ' 3', ' 4', ' 5', ' 6', ' 7', ' 8', ' 9', '10', '11', '12', '13']
-# characters_jpn=[' A', ' B', ' C', ' D', ' E', ' F', ' G', ' H', ' I', ' J', ' K', ' L']
-# characters=[None]*25
-# characters[::2]=characters_num
-# characters[1::2]=characters_jpn
-
-# #Practice
-# # characters_num=[' 1', ' 2', ' 3', ' 4', ' 5', ' 6']
-# # characters_jpn=[' A', ' B', ' C', ' D', ' E', ' F']
-# #characters=[' 1', ' 2', ' 3', ' 4', ' 5', ' 6', ' 7', ' 8', ' 9', '10', '11', '12']
-
-# #TMT A
-# #characters=[' 1', ' 2', ' 3', ' 4', ' 5', ' 6', ' 7', ' 8', ' 9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25']
-# #characters=[' A', ' B', ' C', ' D', ' E', ' F', ' G', ' H', ' I', ' J', ' K', ' L', ' M', ' N', ' O', ' P', ' Q', ' R', ' S', ' T', ' U', ' V', ' W', ' X', ' Y']
+    im=Image.new('RGB', (space[0], space[1]), (255, 255, 255))
+    draw=ImageDraw.Draw(im)
+    font = ImageFont.truetype("arial.ttf", 44)
 
 
-# #For TMT-B starting on 7: (Don't forget to rename to BX)
-# # characters_num=[' 7', ' 8', ' 9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19']
-# # characters_jpn=[' G', ' H', ' I', ' J', ' K', ' L', 'M', 'N', 'O', 'P', 'Q', 'R']
 
-# #Draw Start and End
-# draw.text((nodes[0][0]-diameter*1/2, nodes[0][1]+diameter*1/2), "Start", (0, 255, 0), font)
-# #draw.text((nodes[11][0]-diameter*1/2, nodes[11][1]+diameter*1/2), "End", (0, 0, 0), font)
-# draw.text((nodes[24][0]-diameter*1/2, nodes[24][1]+diameter*1/2), "End", (0, 0, 0), font)
+    #Parameters add by Pierre for convenience 
+    task = "TMT-stop-A"
+    iteration = it
+    images_folder = "".join(["TMT", task[-1], "_images/num_", str(iteration)])
+    image_prefix = "".join([task, "_1_", str(iteration)])
+    image_path = "".join([images_folder, "/",image_prefix])
 
-# for i in range(nodes.shape[0]):
-#     temp=nodes[i]
-#     tempsquares=Squares[i]
-#     draw.ellipse((temp[0]-diameter/2, temp[1]-diameter/2, temp[0]+diameter/2, temp[1]+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))
-#     draw.text((temp[0]-diameter*2/5, temp[1]-diameter*2/5), characters[i], (0, 0, 0), font)
-    
-#     #Draw squares
-#     if tempsquares == "Above":
-#         draw.rectangle((temp[0]-diameter/5, temp[1]-diameter/2, temp[0]+diameter/5, temp[1]-diameter/1.111), fill=(0, 0, 0), outline=(0, 0, 0))
-#     elif tempsquares == "Left":
-#         draw.rectangle((temp[0]-diameter/2, temp[1]-diameter/5, temp[0]-diameter/1.111, temp[1]+diameter/5), fill=(0, 0, 0), outline=(0, 0, 0))
-#     elif tempsquares == "Right":
-#         draw.rectangle((temp[0]+diameter/2, temp[1]-diameter/5, temp[0]+diameter/1.111, temp[1]+diameter/5), fill=(0, 0, 0), outline=(0, 0, 0))
+
+
+    if os.path.exists(images_folder) is False:
+        os.mkdir(images_folder)
+
+
+
+
+
+    if task[-1]=="B":
+        #TMT B
+        characters_num=[' 1', ' 2', ' 3', ' 4', ' 5', ' 6', ' 7', ' 8', ' 9', '10', '11', '12', '13']
+        characters_jpn=[' A', ' B', ' C', ' D', ' E', ' F', ' G', ' H', ' I', ' J', ' K', ' L']
+        characters=[None]*25
+        characters[::2]=characters_num
+        characters[1::2]=characters_jpn
         
+    if task[-1]=="A":
+        # #TMT A
+        characters=[' 1', ' 2', ' 3', ' 4', ' 5', ' 6', ' 7', ' 8', ' 9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25']
 
-# im.save('TMTstop-B_1_5.png', quality=95)
-# draw.text((nodes[0][0]-diameter*1/2, nodes[0][1]+diameter*1/2), "Start", (0, 0, 0), font)
 
-# #Image for filled first number/letter
-# draw.ellipse((nodes[0][0]-diameter/2, nodes[0][1]-diameter/2, nodes[0][0]+diameter/2, nodes[0][1]+diameter/2), fill=(0, 255, 0), outline=(0, 0, 0))
-# draw.text((nodes[0][0]-diameter*2/5, nodes[0][1]-diameter*2/5), characters[0], (0, 0, 0), font)
-# im.save('TMTstop-B_1_5firstgreen.png', quality=95)
-# draw.ellipse((nodes[0][0]-diameter/2, nodes[0][1]-diameter/2, nodes[0][0]+diameter/2, nodes[0][1]+diameter/2), fill=(255, 0, 0), outline=(0, 0, 0))
-# draw.text((nodes[0][0]-diameter*2/5, nodes[0][1]-diameter*2/5), characters[0], (0, 0, 0), font)
-# im.save('TMTstop-B_1_5firstred.png', quality=95)
-# draw.ellipse((nodes[0][0]-diameter/2, nodes[0][1]-diameter/2, nodes[0][0]+diameter/2, nodes[0][1]+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))  
-# draw.text((nodes[0][0]-diameter*2/5, nodes[0][1]-diameter*2/5), characters[0], (0, 0, 0), font)
+    #Draw Start and End
+    draw.text((nodes[0][0]-diameter*1/2, nodes[0][1]+diameter*1/2), "Start", (0, 255, 0), font)
+    #draw.text((nodes[11][0]-diameter*1/2, nodes[11][1]+diameter*1/2), "End", (0, 0, 0), font)
+    draw.text((nodes[24][0]-diameter*1/2, nodes[24][1]+diameter*1/2), "End", (0, 0, 0), font)
 
-# #Draw lines (trails) and save as images
-# for i in range(nodes.shape[0]-1):
-#     temp=nodes[i]
-#     temp2=nodes[i+1]
-#     draw.line((temp[0], temp[1], temp2[0], temp2[1]), fill=(0, 0, 0), width=6)
-#     im.save('TMTstop-B_1_5linestimulus{0}.png'.format(i), quality=95)
-#     draw.line((temp[0], temp[1], temp2[0], temp2[1]), fill=(0, 255, 0), width=6)
-#     draw.ellipse((temp2[0]-diameter/2, temp2[1]-diameter/2, temp2[0]+diameter/2, temp2[1]+diameter/2), fill=(0, 255, 0), outline=(0, 0, 0))
-#     draw.text((temp2[0]-diameter*2/5, temp2[1]-diameter*2/5), characters[i+1], (0, 0, 0), font)
-#     draw.ellipse((temp[0]-diameter/2, temp[1]-diameter/2, temp[0]+diameter/2, temp[1]+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))
-#     draw.text((temp[0]-diameter*2/5, temp[1]-diameter*2/5), characters[i], (0, 0, 0), font)
-#     im.save('TMTstop-B_1_5greenlinestimulus{0}.png'.format(i), quality=95)
-#     draw.line((temp[0], temp[1], temp2[0], temp2[1]), fill=(0, 0, 0), width=6)
-#     draw.ellipse((temp2[0]-diameter/2, temp2[1]-diameter/2, temp2[0]+diameter/2, temp2[1]+diameter/2), fill=(255, 0, 0), outline=(0, 0, 0))
-#     draw.text((temp2[0]-diameter*2/5, temp2[1]-diameter*2/5), characters[i+1], (0, 0, 0), font)
-#     draw.ellipse((temp[0]-diameter/2, temp[1]-diameter/2, temp[0]+diameter/2, temp[1]+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))
-#     draw.text((temp[0]-diameter*2/5, temp[1]-diameter*2/5), characters[i], (0, 0, 0), font)
-#     im.save('TMTstop-B_1_5redlinestimulus{0}.png'.format(i), quality=95)
-#     draw.line((temp[0], temp[1], temp2[0], temp2[1]), fill=(0, 0, 0), width=6)
-#     draw.ellipse((temp2[0]-diameter/2, temp2[1]-diameter/2, temp2[0]+diameter/2, temp2[1]+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))  
-#     draw.text((temp2[0]-diameter*2/5, temp2[1]-diameter*2/5), characters[i+1], (0, 0, 0), font)
-#     draw.ellipse((temp[0]-diameter/2, temp[1]-diameter/2, temp[0]+diameter/2, temp[1]+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))
-#     draw.text((temp[0]-diameter*2/5, temp[1]-diameter*2/5), characters[i], (0, 0, 0), font)
+    for i in range(nodes.shape[0]):
+        temp=nodes[i]
+        x, y = nodes[i]
+        tempsquares=Squares[i]
+        draw.ellipse((x-diameter/2, y-diameter/2, x+diameter/2, y+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))
+        draw.text((x-diameter*2/5, y-diameter*2/5), characters[i], (0, 0, 0), font)
+        
+        #Draw squares
+        radius = diameter/2
+        box_length = diameter/2.3
 
+        #Added by Pierre
+        square_shapes = {
+        "Above": [x-box_length/2, y-radius-box_length, x+box_length/2, y-radius],
+        "Left": [x-radius-box_length, y-box_length/2, x-radius, y+box_length/2],   
+        "Right": [x+radius, y-box_length/2, x+radius+box_length, y+box_length/2]
+        }
+        
+        draw.rectangle(square_shapes[tempsquares], fill= "black")
+
+
+    im.save(f'{image_path}.png', quality=95)
+    draw.text((nodes[0][0]-diameter*1/2, nodes[0][1]+diameter*1/2), "Start", (0, 0, 0), font)
+
+    #Image for filled first number/letter
+    draw.ellipse((nodes[0][0]-diameter/2, nodes[0][1]-diameter/2, nodes[0][0]+diameter/2, nodes[0][1]+diameter/2), fill=(0, 255, 0), outline=(0, 0, 0))
+    draw.text((nodes[0][0]-diameter*2/5, nodes[0][1]-diameter*2/5), characters[0], (0, 0, 0), font)
+    im.save(f'{image_path}firstgreen.png', quality=95)
+    draw.ellipse((nodes[0][0]-diameter/2, nodes[0][1]-diameter/2, nodes[0][0]+diameter/2, nodes[0][1]+diameter/2), fill=(255, 0, 0), outline=(0, 0, 0))
+    draw.text((nodes[0][0]-diameter*2/5, nodes[0][1]-diameter*2/5), characters[0], (0, 0, 0), font)
+    im.save(f'{image_path}firstred.png', quality=95)
+    draw.ellipse((nodes[0][0]-diameter/2, nodes[0][1]-diameter/2, nodes[0][0]+diameter/2, nodes[0][1]+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))  
+    draw.text((nodes[0][0]-diameter*2/5, nodes[0][1]-diameter*2/5), characters[0], (0, 0, 0), font)
+
+    #Draw lines (trails) and save as images
+    for i in range(nodes.shape[0]-1):
+        x, y =nodes[i]
+        x2, y2=nodes[i+1]
+        draw.line((x, y, x2, y2), fill=(0, 0, 0), width=6)
+        im.save(f'{image_path}linestimulus{i}.png', quality=95)
+        draw.line((x, y, x2, y2), fill=(0, 255, 0), width=6)
+        draw.ellipse((x2-diameter/2, y2-diameter/2, x2+diameter/2, y2+diameter/2), fill=(0, 255, 0), outline=(0, 0, 0))
+        draw.text((x2-diameter*2/5, y2-diameter*2/5), characters[i+1], (0, 0, 0), font)
+        draw.ellipse((x-diameter/2, y-diameter/2, x+diameter/2, y+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))
+        draw.text((x-diameter*2/5, y-diameter*2/5), characters[i], (0, 0, 0), font)
+        im.save(f'{image_path}greenlinestimulus{i}.png', quality=95)
+        draw.line((x, y, x2, y2), fill=(0, 0, 0), width=6)
+        draw.ellipse((x2-diameter/2, y2-diameter/2, x2+diameter/2, y2+diameter/2), fill=(255, 0, 0), outline=(0, 0, 0))
+        draw.text((x2-diameter*2/5, y2-diameter*2/5), characters[i+1], (0, 0, 0), font)
+        draw.ellipse((x-diameter/2, y-diameter/2, x+diameter/2, y+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))
+        draw.text((x-diameter*2/5, y-diameter*2/5), characters[i], (0, 0, 0), font)
+        im.save(f'{image_path}redlinestimulus{i}.png', quality=95)
+        draw.line((x, y, x2, y2), fill=(0, 0, 0), width=6)
+        draw.ellipse((x2-diameter/2, y2-diameter/2, x2+diameter/2, y2+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))  
+        draw.text((x2-diameter*2/5, y2-diameter*2/5), characters[i+1], (0, 0, 0), font)
+        draw.ellipse((x-diameter/2, y-diameter/2, x+diameter/2, y+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))
+        draw.text((x-diameter*2/5, y-diameter*2/5), characters[i], (0, 0, 0), font)
+
+    #Saving data for trial excel file
+    data = pd.DataFrame(
+        {
+            "NumberLetter": characters + [""],
+            "corrAns": ['["2"]' if pos == "Above" else '["1"]' if pos == "Left" else '["3"]' for pos in Squares] + [""],
+            "Correct": [2 if pos == "Above" else 1 if pos == "Left" else 3 for pos in Squares] + [""],
+            "StimFile": [f'Images/{image_prefix}.png', f'Images/{image_prefix}.png'] + [f'Images/{image_prefix}linestimulus{i}.png' for i in range(n_nodes-1)],
+            "Correct_StimFile": [f'Images/{image_prefix}.png', f'Images/{image_prefix}firstgreen.png'] + [f'Images/{image_prefix}greenlinestimulus{i}.png' for i in range(n_nodes-1)],
+            "False_StimFile_Version": [f'Images/{image_prefix}.png', f'Images/{image_prefix}firstred.png'] + [f'Images/{image_prefix}redlinestimulus{i}.png' for i in range(n_nodes-1)]
+        }
+    )
+    data.to_csv(f"{images_folder}/{image_prefix}.csv", sep= ';',  index=False)
+'''
 #TMT Circle control
 im=Image.new('RGB', (space[0], space[1]), (255, 255, 255))
 draw=ImageDraw.Draw(im)
@@ -251,16 +284,16 @@ for i in np.arange(-90, 270, 14.4):
 for i in range(nodes.shape[0]):
     temp=Circlenodes[i]
     tempsquares=Squares[i]
-    draw.ellipse((temp[0]-diameter/2, temp[1]-diameter/2, temp[0]+diameter/2, temp[1]+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))
-    draw.text((temp[0]-diameter*2/5, temp[1]-diameter*2/5), characters[i], (0, 0, 0), font)
+    draw.ellipse((x-diameter/2, y-diameter/2, x+diameter/2, y+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))
+    draw.text((x-diameter*2/5, y-diameter*2/5), characters[i], (0, 0, 0), font)
     
 #Draw squares
     if tempsquares == "Above":
-        draw.rectangle((temp[0]-diameter/5, temp[1]-diameter/2, temp[0]+diameter/5, temp[1]-diameter/1.111), fill=(0, 0, 0), outline=(0, 0, 0))
+        draw.rectangle((x-diameter/5, y-diameter/2, x+diameter/5, y-diameter/2), fill=(0, 0, 0), outline=(0, 0, 0))
     elif tempsquares == "Left":
-        draw.rectangle((temp[0]-diameter/2, temp[1]-diameter/5, temp[0]-diameter/1.111, temp[1]+diameter/5), fill=(0, 0, 0), outline=(0, 0, 0))
+        draw.rectangle((x-diameter/2, y-diameter/5, x-diameter/5, y+diameter/5), fill=(0, 0, 0), outline=(0, 0, 0))
     elif tempsquares == "Right":
-        draw.rectangle((temp[0]+diameter/2, temp[1]-diameter/5, temp[0]+diameter/1.111, temp[1]+diameter/5), fill=(0, 0, 0), outline=(0, 0, 0))
+        draw.rectangle((x+diameter/2, y-diameter/5, x+diameter/2, y+diameter/5), fill=(0, 0, 0), outline=(0, 0, 0))
   
 #Draw Start and End
 draw.text((Circlenodes[0][0]-diameter*1/2, Circlenodes[0][1]+diameter*1/2), "Start", (0, 255, 0), font)
@@ -285,29 +318,29 @@ draw.text((Circlenodes[0][0]-diameter*2/5, Circlenodes[0][1]-diameter*2/5), char
 for i in range(nodes.shape[0]-1):
     temp=Circlenodes[i]
     temp2=Circlenodes[i+1]
-    draw.line((temp[0], temp[1], temp2[0], temp2[1]), fill=(0, 0, 0), width=6)
+    draw.line((x, y, x2, y2), fill=(0, 0, 0), width=6)
     im.save('TMTstop-control_1_3linestimulus{0}.png'.format(i), quality=95)
-    draw.line((temp[0], temp[1], temp2[0], temp2[1]), fill=(0, 255, 0), width=6)
-    draw.ellipse((temp2[0]-diameter/2, temp2[1]-diameter/2, temp2[0]+diameter/2, temp2[1]+diameter/2), fill=(0, 255, 0), outline=(0, 0, 0))
-    draw.text((temp2[0]-diameter*2/5, temp2[1]-diameter*2/5), characters[i+1], (0, 0, 0), font)
-    draw.ellipse((temp[0]-diameter/2, temp[1]-diameter/2, temp[0]+diameter/2, temp[1]+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))
-    draw.text((temp[0]-diameter*2/5, temp[1]-diameter*2/5), characters[i], (0, 0, 0), font)
+    draw.line((x, y, x2, y2), fill=(0, 255, 0), width=6)
+    draw.ellipse((x2-diameter/2, y2-diameter/2, x2+diameter/2, y2+diameter/2), fill=(0, 255, 0), outline=(0, 0, 0))
+    draw.text((x2-diameter*2/5, y2-diameter*2/5), characters[i+1], (0, 0, 0), font)
+    draw.ellipse((x-diameter/2, y-diameter/2, x+diameter/2, y+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))
+    draw.text((x-diameter*2/5, y-diameter*2/5), characters[i], (0, 0, 0), font)
     im.save('TMTstop-control_1_3greenlinestimulus{0}.png'.format(i), quality=95)
-    draw.line((temp[0], temp[1], temp2[0], temp2[1]), fill=(0, 0, 0), width=6)
-    draw.ellipse((temp2[0]-diameter/2, temp2[1]-diameter/2, temp2[0]+diameter/2, temp2[1]+diameter/2), fill=(255, 0, 0), outline=(0, 0, 0))
-    draw.text((temp2[0]-diameter*2/5, temp2[1]-diameter*2/5), characters[i+1], (0, 0, 0), font)
-    draw.ellipse((temp[0]-diameter/2, temp[1]-diameter/2, temp[0]+diameter/2, temp[1]+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))
-    draw.text((temp[0]-diameter*2/5, temp[1]-diameter*2/5), characters[i], (0, 0, 0), font)
+    draw.line((x, y, x2, y2), fill=(0, 0, 0), width=6)
+    draw.ellipse((x2-diameter/2, y2-diameter/2, x2+diameter/2, y2+diameter/2), fill=(255, 0, 0), outline=(0, 0, 0))
+    draw.text((x2-diameter*2/5, y2-diameter*2/5), characters[i+1], (0, 0, 0), font)
+    draw.ellipse((x-diameter/2, y-diameter/2, x+diameter/2, y+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))
+    draw.text((x-diameter*2/5, y-diameter*2/5), characters[i], (0, 0, 0), font)
     im.save('TMTstop-control_1_3redlinestimulus{0}.png'.format(i), quality=95)
-    draw.line((temp[0], temp[1], temp2[0], temp2[1]), fill=(0, 0, 0), width=6)
-    draw.ellipse((temp2[0]-diameter/2, temp2[1]-diameter/2, temp2[0]+diameter/2, temp2[1]+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))  
-    draw.text((temp2[0]-diameter*2/5, temp2[1]-diameter*2/5), characters[i+1], (0, 0, 0), font)
-    draw.ellipse((temp[0]-diameter/2, temp[1]-diameter/2, temp[0]+diameter/2, temp[1]+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))
-    draw.text((temp[0]-diameter*2/5, temp[1]-diameter*2/5), characters[i], (0, 0, 0), font)
+    draw.line((x, y, x2, y2), fill=(0, 0, 0), width=6)
+    draw.ellipse((x2-diameter/2, y2-diameter/2, x2+diameter/2, y2+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))  
+    draw.text((x2-diameter*2/5, y2-diameter*2/5), characters[i+1], (0, 0, 0), font)
+    draw.ellipse((x-diameter/2, y-diameter/2, x+diameter/2, y+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))
+    draw.text((x-diameter*2/5, y-diameter*2/5), characters[i], (0, 0, 0), font)
 
 
     
-
+'''
     
 
 
