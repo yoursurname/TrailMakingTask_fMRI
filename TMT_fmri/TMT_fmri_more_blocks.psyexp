@@ -426,17 +426,17 @@
       <CodeComponent name="code_8">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="globalClock = core.Clock()&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="globalClock = new core.Clock();&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
-        <Param val="if (key_resp_7.keys) == 's':&amp;#10;    core.wait(8)&amp;#10;    continueRoutine = False&amp;#10;    &amp;#10;        &amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
-        <Param val="if ((key_resp_7.keys === &quot;s&quot;)) {&amp;#10;    core.wait(8);&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="if (key_resp_7.keys) == 's':&amp;#10;    expStart = globalClock.getTime()&amp;#10;    core.wait(5)&amp;#10;    continueRoutine = False&amp;#10;    &amp;#10;        &amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="if ((key_resp_7.keys === &quot;s&quot;)) {&amp;#10;    expStart = globalClock.getTime();&amp;#10;    core.wait(5);&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="print(f&quot;Total time: {globalClock.getTime()-expStart}&quot;)" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="console.log(`Total time: ${(globalClock.getTime() - expStart)}`);&amp;#10;" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="Time_Since_Run = new core.MonotonicClock();&amp;#10;globalClock = new core.Clock();&amp;#10;expStart = globalClock.getTime();&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="Time_Since_Run = core.MonotonicClock()&amp;#10;globalClock = core.Clock()&amp;#10;expStart = globalClock.getTime()" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="Time_Since_Run = new core.MonotonicClock();&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="Time_Since_Run = core.MonotonicClock()&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="code_8" valType="code" updates="None" name="name"/>
       </CodeComponent>
