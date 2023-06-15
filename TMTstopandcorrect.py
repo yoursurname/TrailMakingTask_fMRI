@@ -108,32 +108,42 @@ def AB_CD_2_AC_BD(nodes, x, y):
     nodes=np.r_[nodes[:x+1], nodes[y:x:-1], nodes[(y+1):]]
     return nodes
 
+def merge_lists(list1, list2):
+    return [item for pair in zip(list1, list2) for item in pair]
 
 
+dir = os.path.dirname(os.path.abspath(__file__))
+os.chdir(dir)
 #n_nodes=12
-n_nodes=25
+n_nodes=12
 space_w=1920
 space_h=1080
 white_w=100
 white_h=50
 diameter=65
 
+
 space=np.array([space_w, space_h])
 white=np.array([white_w, white_h])
 
 #Making several iterations of the TMT maps in one go
-iterations = [12]
+iterations = [20]
+
+#Task and half (when images where the divided with 12 nodes each)
+task = "TMT-stop-B"
+half = 2
+
 for it in iterations:
 
     #Create a list for squarePos
     Squareoptions = ["Above", "Left", "Right"]
     n = 0
     Squares = ['x']
-    while n < 25:
+    while n < n_nodes:
         squarePos = random.choice(Squareoptions)
         if Squares[n] != squarePos:
             Squares.append(squarePos)
-            n = n + 1
+            n += 1
     del Squares[0]
 
 
@@ -148,38 +158,45 @@ for it in iterations:
 
 
     #Parameters add by Pierre for convenience 
-    task = "TMT-stop-A"
     iteration = it
     images_folder = "".join(["TMT", task[-1], "_images/num_", str(iteration)])
-    image_prefix = "".join([task, "_1_", str(iteration)])
+    image_prefix = "".join([task, "_", str(iteration), "_",str(half) ])
     image_path = "".join([images_folder, "/",image_prefix])
+    
 
+    
 
-
-    if os.path.exists(images_folder) is False:
-        os.mkdir(images_folder)
-
-
+    if not os.path.exists(images_folder):
+        try:
+            os.mkdir(images_folder)
+            print("Directory created successfully.")
+        except OSError as e:
+            print(f"Error creating directory: {e}")
+    else:
+        print("Directory already exists.")
 
 
 
     if task[-1]=="B":
         #TMT B
         characters_num=[' 1', ' 2', ' 3', ' 4', ' 5', ' 6', ' 7', ' 8', ' 9', '10', '11', '12', '13']
-        characters_jpn=[' A', ' B', ' C', ' D', ' E', ' F', ' G', ' H', ' I', ' J', ' K', ' L']
-        characters=[None]*25
-        characters[::2]=characters_num
-        characters[1::2]=characters_jpn
-        
+        characters_jpn=[' A', ' B', ' C', ' D', ' E', ' F', ' G', ' H', ' I', ' J', ' K', ' L', 'M']
+        characters_lst=merge_lists(characters_num, characters_jpn)
+        #characters[::2]=characters_num 
+        #characters[1::2]=characters_jpn   
     if task[-1]=="A":
         # #TMT A
-        characters=[' 1', ' 2', ' 3', ' 4', ' 5', ' 6', ' 7', ' 8', ' 9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25']
+        characters_lst=[' 1', ' 2', ' 3', ' 4', ' 5', ' 6', ' 7', ' 8', ' 9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24']
 
-
+    
+    start = n_nodes if half == 2 else 0
+    stop = n_nodes*half
+    characters = characters_lst[start:stop]
+    
     #Draw Start and End
     draw.text((nodes[0][0]-diameter*1/2, nodes[0][1]+diameter*1/2), "Start", (0, 255, 0), font)
     #draw.text((nodes[11][0]-diameter*1/2, nodes[11][1]+diameter*1/2), "End", (0, 0, 0), font)
-    draw.text((nodes[24][0]-diameter*1/2, nodes[24][1]+diameter*1/2), "End", (0, 0, 0), font)
+    draw.text((nodes[n_nodes-1][0]-diameter*1/2, nodes[n_nodes-1][1]+diameter*1/2), "End", (0, 0, 0), font)
 
     for i in range(nodes.shape[0]):
         temp=nodes[i]
@@ -217,22 +234,23 @@ for it in iterations:
 
     #Draw lines (trails) and save as images
     for i in range(nodes.shape[0]-1):
+        node_number = i+n_nodes if half == 2 else i
         x, y =nodes[i]
         x2, y2=nodes[i+1]
         draw.line((x, y, x2, y2), fill=(0, 0, 0), width=6)
-        im.save(f'{image_path}linestimulus{i}.png', quality=95)
+        im.save(f'{image_path}linestimulus{node_number}.png', quality=95)
         draw.line((x, y, x2, y2), fill=(0, 255, 0), width=6)
         draw.ellipse((x2-diameter/2, y2-diameter/2, x2+diameter/2, y2+diameter/2), fill=(0, 255, 0), outline=(0, 0, 0))
         draw.text((x2-diameter*2/5, y2-diameter*2/5), characters[i+1], (0, 0, 0), font)
         draw.ellipse((x-diameter/2, y-diameter/2, x+diameter/2, y+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))
         draw.text((x-diameter*2/5, y-diameter*2/5), characters[i], (0, 0, 0), font)
-        im.save(f'{image_path}greenlinestimulus{i}.png', quality=95)
+        im.save(f'{image_path}greenlinestimulus{node_number}.png', quality=95)
         draw.line((x, y, x2, y2), fill=(0, 0, 0), width=6)
         draw.ellipse((x2-diameter/2, y2-diameter/2, x2+diameter/2, y2+diameter/2), fill=(255, 0, 0), outline=(0, 0, 0))
         draw.text((x2-diameter*2/5, y2-diameter*2/5), characters[i+1], (0, 0, 0), font)
         draw.ellipse((x-diameter/2, y-diameter/2, x+diameter/2, y+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))
         draw.text((x-diameter*2/5, y-diameter*2/5), characters[i], (0, 0, 0), font)
-        im.save(f'{image_path}redlinestimulus{i}.png', quality=95)
+        im.save(f'{image_path}redlinestimulus{node_number}.png', quality=95)
         draw.line((x, y, x2, y2), fill=(0, 0, 0), width=6)
         draw.ellipse((x2-diameter/2, y2-diameter/2, x2+diameter/2, y2+diameter/2), fill=(255, 255, 255), outline=(0, 0, 0))  
         draw.text((x2-diameter*2/5, y2-diameter*2/5), characters[i+1], (0, 0, 0), font)
@@ -245,12 +263,14 @@ for it in iterations:
             "NumberLetter": characters + [""],
             "corrAns": ['["2"]' if pos == "Above" else '["1"]' if pos == "Left" else '["3"]' for pos in Squares] + [""],
             "Correct": [2 if pos == "Above" else 1 if pos == "Left" else 3 for pos in Squares] + [""],
-            "StimFile": [f'Images/{image_prefix}.png', f'Images/{image_prefix}.png'] + [f'Images/{image_prefix}linestimulus{i}.png' for i in range(n_nodes-1)],
-            "Correct_StimFile": [f'Images/{image_prefix}.png', f'Images/{image_prefix}firstgreen.png'] + [f'Images/{image_prefix}greenlinestimulus{i}.png' for i in range(n_nodes-1)],
-            "False_StimFile_Version": [f'Images/{image_prefix}.png', f'Images/{image_prefix}firstred.png'] + [f'Images/{image_prefix}redlinestimulus{i}.png' for i in range(n_nodes-1)]
+            "StimFile": [f'Images/{image_prefix}.png', f'Images/{image_prefix}.png'] +  [f'Images/{image_prefix}linestimulus{i + n_nodes}' if half == 2 else f'Images/{image_prefix}linestimulus{i}.png' for i in range(n_nodes-1)],
+            "Correct_StimFile": [f'Images/{image_prefix}.png', f'Images/{image_prefix}firstgreen.png'] + [f'Images/{image_prefix}greenlinestimulus{i + n_nodes}' if half == 2 else f'Images/{image_prefix}greenlinestimulus{i}.png' for i in range(n_nodes-1)],
+            "False_StimFile": [f'Images/{image_prefix}.png', f'Images/{image_prefix}firstred.png'] + [f'Images/{image_prefix}redlinestimulus{i + n_nodes}' if half == 2 else f'Images/{image_prefix}redlinestimulus{i}.png' for i in range(n_nodes-1)],
+            "Version": [f"TMT_{task[-1]}" for i in range(n_nodes +1)]
         }
     )
     data.to_csv(f"{images_folder}/{image_prefix}.csv", sep= ';',  index=False)
+
 '''
 #TMT Circle control
 im=Image.new('RGB', (space[0], space[1]), (255, 255, 255))

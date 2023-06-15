@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2022.2.5),
-    on maj 31, 2023, at 15:00
+    on juni 15, 2023, at 14:24
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -115,6 +115,9 @@ polygon_2 = visual.ShapeStim(
     ori=0.0, pos=(0, 0), anchor='center',
     lineWidth=0.1,     colorSpace='rgb',  lineColor=None, fillColor='black',
     opacity=None, depth=-1.0, interpolate=True)
+# Run 'Begin Experiment' code from code_8
+globalClock = core.Clock()
+
 
 # --- Initialize components for Routine "trial_info" ---
 trial_instructions = visual.TextStim(win=win, name='trial_instructions',
@@ -334,7 +337,8 @@ while continueRoutine:
         polygon_2.setAutoDraw(True)
     # Run 'Each Frame' code from code_8
     if (key_resp_7.keys) == 's':
-        core.wait(8)
+        expStart = globalClock.getTime()
+        core.wait(5)
         continueRoutine = False
         
             
@@ -371,8 +375,7 @@ if key_resp_7.keys != None:  # we had a response
 thisExp.nextEntry()
 # Run 'End Routine' code from code_8
 Time_Since_Run = core.MonotonicClock()
-globalClock = core.Clock()
-expStart = globalClock.getTime()
+
 # the Routine "Wait_fMRI" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
@@ -402,11 +405,11 @@ for thisBlock in block:
     # Run 'Begin Routine' code from parameters
     current_trial = experiment_sequence[trial_count]
     if current_trial == "control":
-        trial_instructions.text = "Numerisk ordning.\n\n(1, 2, 3, 4..)"
+        trial_instructions.text = "Numerisk ordning.\n\n(1-2-3-4..)"
         row_selection = f"{control_stimuli_starting_rows[control_index]}:{control_stimuli_starting_rows[control_index]+n_trial_images*trials_per_block}"
         control_index += trials_per_block
     elif current_trial == "TMTA":
-        trial_instructions.text = "Numerisk ordning.\n\n(1, 2, 3, 4..)"
+        trial_instructions.text = "Numerisk ordning.\n\n(1-2-3-4..)"
         row_selection = f"{TMTA_stimuli_starting_rows[TMTA_index]}:{TMTA_stimuli_starting_rows[TMTA_index]+n_trial_images*trials_per_block}"
         TMTA_index += trials_per_block
     elif current_trial == "TMTB":
@@ -430,7 +433,7 @@ for thisBlock in block:
     frameN = -1
     
     # --- Run Routine "trial_info" ---
-    while continueRoutine and routineTimer.getTime() < 5.0:
+    while continueRoutine and routineTimer.getTime() < 10.0:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -450,7 +453,7 @@ for thisBlock in block:
             trial_instructions.setAutoDraw(True)
         if trial_instructions.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > trial_instructions.tStartRefresh + 5-frameTolerance:
+            if tThisFlipGlobal > trial_instructions.tStartRefresh + 10-frameTolerance:
                 # keep track of stop time/frame for later
                 trial_instructions.tStop = t  # not accounting for scr refresh
                 trial_instructions.frameNStop = frameN  # exact frame index
@@ -490,12 +493,12 @@ for thisBlock in block:
     if routineForceEnded:
         routineTimer.reset()
     else:
-        routineTimer.addTime(-5.000000)
+        routineTimer.addTime(-10.000000)
     
     # set up handler to look after randomisation of conditions etc
     trials = data.TrialHandler(nReps=1.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
-        trialList=data.importConditions('Only_TMTA_TMTA.xlsx', selection=row_selection),
+        trialList=data.importConditions('Only_TMTA_TMTB.xlsx', selection=row_selection),
         seed=None, name='trials')
     thisExp.addLoop(trials)  # add the loop to the experiment
     thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
